@@ -75,6 +75,12 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
+.text-white{
+	color: var(--white);
+	font-size: var(--copy);
+	font-family: 'Open Sans', sans-serif;
+}
+
 .button-text{
 	font-size: var(--button-text);
 	color: var(--dark);
