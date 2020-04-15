@@ -1,0 +1,65 @@
+/*LARGE DEVICES*/
+
+@media(min-width: 1300px){
+/*	This is working fine*/
+}
+
+@media(min-width:768px) and (max-width:1299px){
+	.cover-content-container{
+		padding: 5%;
+	}
+
+	.name-heading{
+		font-size: 5em;
+	}
+	.right-side-container .img{
+		width: 60%;
+	}
+	.image-container::after{
+		width: 60%;
+		height: 90%;
+		top: 10px;
+		left: 100px;
+	}
+	.all-skills-container{
+		flex-direction: column;
+	}
+}
+/*FOR SMALLER DEVICES()*/
+@media(max-width: 767px){
+	.cover-content-container{
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+	.left-side-container{
+		margin: 5%;
+	}
+	.right-side-container .img{
+		width: 80%;
+	}
+	.left-side-container div{
+		justify-content: center;
+		text-align: center;
+	}
+	.left-side-container .name-heading{
+		font-size: 4em;
+		margin-top: 10%;
+	}
+	.image-container::after{
+		width: 80%;
+		top: 10px;
+		left: 50px;
+	}
+	.skills-container{
+		flex-direction: column;
+	}
+	.all-skills-container{
+		flex-direction: column;
+	}
+	.section-heading{
+		text-align: center;
+	}
+	.text-content-container{
+		text-align: center;
+	}
+}
