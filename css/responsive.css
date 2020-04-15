@@ -24,6 +24,12 @@
 	.all-skills-container{
 		flex-direction: column;
 	}
+	.illustration-container{
+		display: none;
+	}
+	.coding-skills{
+		margin-right: 1em;
+	}
 }
 /*FOR SMALLER DEVICES()*/
 @media(max-width: 767px){
@@ -64,6 +70,17 @@
 	}
 	.text-content-container{
 		text-align: center;
+	}
+
+	.techincal-skills-container{
+		flex-direction: column;
+		text-align: center;
+	}
+	.coding-skills{
+		margin: 2em 0em;
+	}
+	.illustration-container{
+		display: none;
 	}
 
 	.footer-content-container{

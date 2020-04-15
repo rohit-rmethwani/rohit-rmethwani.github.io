@@ -29,6 +29,7 @@ body{
 	--yellow: #FFBA39;
 	--white: #ffffff;
 	--dark: #303030;
+	--grey: #f2f2f2;
 
 	--section-heading: 3.5em;
 	--copy: 2em;
@@ -39,6 +40,10 @@ body{
 /* Utilities */
 .bg-dark{
 	background-color: var(--dark);
+}
+
+.bg-grey{
+	background-color: var(--grey);
 }
 
 .text-yellow{
@@ -56,11 +61,16 @@ body{
 
 .underline{
 	text-decoration: underline;
-	text-decoration-color: var(--white);
+	text-decoration-color: var(--grey);
+}
+
+.underline-yellow{
+	text-decoration: underline;
+	text-decoration-color: var(--yellow);
 }
 
 .text-normal{
-	color: var(--white);
+	color: var(--dark);
 	font-size: var(--copy);
 	font-family: 'Open Sans', sans-serif;
 }
@@ -225,6 +235,45 @@ body{
 
 /* ABOUT ME SECTION */
 
+/* SKILLS SECTION */
+
+.techincal-skills-container{
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	justify-content: space-around;
+}	
+
+.technical-skill-heading{
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.technical-skill-list{
+	list-style-image: url('../images/liststyle.png');
+	list-style-position: inside;
+	margin-top: 1.2em;
+}
+
+.skill-list-item{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+}
+.illustration-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.illustration{
+	font-size: 20em;
+	padding: 0;
+	margin: 0;
+	opacity: 0.5;
+}
+/* SKILLS SECTION */
+
+
 /* FOOTER SECTION */
 
 .heading-container{
@@ -232,7 +281,6 @@ body{
 }
 
 .links-content-container{
-	background-color: var(--white);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
