@@ -27,6 +27,9 @@
 }
 /*FOR SMALLER DEVICES()*/
 @media(max-width: 767px){
+	.mouse-trail{
+		display: none;
+	}
 	.cover-content-container{
 		flex-direction: column-reverse;
 		padding: 5%;
@@ -61,5 +64,35 @@
 	}
 	.text-content-container{
 		text-align: center;
+	}
+
+	.footer-content-container{
+		flex-direction: column;
+	}
+
+	.social-links{
+		margin: 1em;
+		flex-direction: column;
+	}
+
+	.link{
+		margin: 1em 0em;
+	}
+
+	.links-content-container{
+		padding: 10%;
+		margin-bottom: 2em;
+	}
+
+	.mail-button h4{
+		font-size: 1.2em;
+	}
+
+	.main-footer{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.footer-text{
+		margin: 0.5em;
 	}
 }

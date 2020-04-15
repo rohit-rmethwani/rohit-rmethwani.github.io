@@ -5,17 +5,28 @@
 	padding: 0;
 }
 .container{
-	padding: 2% 5%;
+	padding: 2% 6%;
 }
 
 ::selection{
 	color: var(--dark);
 	background-color:var(--yellow);
 }
-
+body{
+	/* cursor: url('../images/cursor.png'), auto; */
+}
+#mouse-trail{
+	width: 25px;
+	height: 25px;
+	background-color: var(--yellow);
+	opacity: 0.5;
+	border-radius: 50%;
+	position: absolute;
+	display: none;
+}
 /* VARIABLES */
 :root{
-	--yellow: #ffcc33;
+	--yellow: #FFBA39;
 	--white: #ffffff;
 	--dark: #303030;
 
@@ -92,10 +103,12 @@
 .button:hover{
 	background-color: var(--dark);
 }
-.button:hover h3{
+.button:hover .button-text{
 	color: var(--yellow)
 }
-
+.bg-yellow{
+	background-color: var(--yellow);
+}
 /* Utilities */
 
 
@@ -127,12 +140,21 @@
 /* Navbar */
 
 /* Hero section */
+.quote-container{
+	padding: 2em;
+	text-align: center;
+}
+.quote{
+	font-family: 'Oswald', sans-serif;
+	font-style: italic;
+	font-size: 1.8em;
+	color: var(--dark);
+}
 .cover-content-container{
 	display: flex;
 	flex-direction: row;
 }
 
-/* Hero section */
 .left-side-container{
 	flex: 1;
 }
@@ -174,6 +196,7 @@
 	height: 100%;
 	border: 2px solid var(--yellow);
 }
+/* Hero section */
 
 /* ABOUT ME SECTION */
 .text-content-container{
@@ -196,4 +219,72 @@
 	text-align: center;
 }
 
+#about-me-section{
+	overflow: hidden;
+}
+
 /* ABOUT ME SECTION */
+
+/* FOOTER SECTION */
+
+.heading-container{
+	margin: 2em 0em;
+}
+
+.links-content-container{
+	background-color: var(--white);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.social-links{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;
+}
+.mail-button{
+	align-self: center;
+	margin: 2%;
+}
+.mail-button .button::before{
+	border:solid 2px var(--dark);
+}
+.mail-button .button:hover>h3{
+	color: var(--white);
+}
+.mail-button-link{
+	text-decoration: none;
+	color: var(--dark);
+	font-weight: normal;
+}
+.mail-button-link h4{
+	font-weight: normal;
+}
+.link{
+	padding: 1%;
+	text-decoration: none;
+	color: var(--dark);
+}
+
+.link:hover{
+	transition: .3s;
+	background-color: var(--yellow);
+}
+.main-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.footer-text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	color: var(--white);
+	font-weight: 100;
+	margin: 0em 2em;
+}
+
+/* FOOTER SECTION */
+
