@@ -4,6 +4,9 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	scroll-behavior: smooth;
+}
 .container{
 	padding: 2% 6%;
 }
@@ -13,7 +16,7 @@
 	background-color:var(--yellow);
 }
 body{
-	/* cursor: url('../images/cursor.png'), auto; */
+	cursor: url('../images/cursor.png'), auto;
 }
 #mouse-trail{
 	width: 25px;
@@ -22,7 +25,6 @@ body{
 	opacity: 0.5;
 	border-radius: 50%;
 	position: absolute;
-	display: none;
 }
 /* VARIABLES */
 :root{
@@ -94,9 +96,12 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	color: var(--white);
+	margin-right: 2em;
+	text-decoration: none;
 }
 .button{
 	background-color: var(--yellow);
+	border: none;
 	padding: 10px 15px;
 	position: relative;
 }
@@ -112,8 +117,8 @@ body{
 }
 .button:hover:before{
 	transition: .2s;
-	top:-1px;
-	left: -1px;
+	top:-2px;
+	left: -2px;
 }
 
 .button:hover{
@@ -189,6 +194,7 @@ body{
 	flex-direction: row;
 	justify-content: flex-start;
 }
+
 
 .right-side-container{
 	display: flex;
@@ -346,8 +352,20 @@ body{
 .mail-button-link h4{
 	font-weight: normal;
 }
+.social-links-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.social-links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
 .link{
-	padding: 1%;
+	display: inline-block;
+	padding: 2%;
+	margin: 0em 2em;
 	text-decoration: none;
 	color: var(--dark);
 }

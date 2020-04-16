@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
     <head>
+        <!--*******************META TAGS**********************-->
         <meta charset="utf-8">
+
+        <meta name="description" content="A hardworking Computer Engineering student with experience of developing things with Programming Concepts,designing UI/UX,front end development and other things.">
+
+        <meta name="keywords" content="HTML5,CSS3,jQuery,Responsive Website,Resume, UI/UX, Portfolio, Designer, Developer">
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width initial-scale=1">
+
+<!--*********************META TAGS***********-->
         <title>Rohit Methwani</title>
-        <link rel="stylesheet" href="plugins/all.min.css">
+        <!--Animation-->
+        <link rel="stylesheet" href="plugins/animation/animate.css">
+        <link rel="stylesheet" href="plugins/fontawesome/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/responsive.css">
+
+        <!--Favicon-->
+        <link rel="shortcut icon" href="images/RM.png">
     </head>
     <body>
         <header>
@@ -26,8 +40,8 @@
                 </div>
             </nav>
         </header>
-        <section id="cover-section">
-            <div class="container cover-content-container bg-dark">
+        <section id="cover-section" >
+            <div class="container cover-content-container bg-dark wow animated lightSpeedIn" data-wow-duration=".5s" data-wow-delay=".2s">
                 <div class="left-side-container">
                     <div class="name-container">
                         <h1 class="name-heading section-heading text-yellow">ROHIT<br>METHWANI</h1>
@@ -36,11 +50,16 @@
                         <p class="text-white">Web Developer</p>
                     </div>
                     <div class="button-wrapper">
-                        <div class="button-container">
-                            <div class="button">
-                                <h3 class="button-text">Contact</h3>
-                            </div>
-                        </div>
+                        <a href="#contact" class="button-container">
+                            <button class="button">
+                                <h3 class="button-text">Let's Talk</h3>
+                            </button>
+                        </a>
+                        <a href="./files/Resume_Rohit_Methwani.pdf" class="button-container" target="__tab">
+                            <button class="button">
+                                <h3 class="button-text">Resume</h3>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="right-side-container">
@@ -59,41 +78,41 @@
                 <div class="heading-container">
                     <h1 class="section-heading text-dark underline-yellow">HELLO THERE</h1>
                 </div>
-                <div class="text-content-container ">
+                <div class="text-content-container wow animated slideInRight" data-wow-duration="1s" data-wow-delay=".2s">
                     <p class="text-normal">
                         I am a hardworking Computer Engineering student with experience of developing things with Programming Concepts,designing UI/UX,front end development and other things.I can learn new things and complete the work within time bound and also flexible with new responsibilities.
                     </p>
                 </div>
-                <div class="all-skills-container">
+                <div class="all-skills-container wow animated slideInLeft" data-wow-duration="1s" data-wow-delay=".2s">
                     <div class="skills-container">
                         <div class="skill">
-                            <h1 class="section-heading text-yellow">20+</h1>
+                            <h1 class="section-heading text-yellow"><span class="counter">20</span>+</h1>
                             <h4 class="text-normal">Projects</h4>
                         </div>
                     </div>
                     <div class="skills-container">
                         <div class="skill">
-                            <h1 class="section-heading text-yellow">5+</h1>
+                            <h1 class="section-heading text-yellow"><span class="counter">5</span>+</h1>
                             <h4 class="text-normal">Recognitions</h4>
                         </div>
                         <div class="skill">
-                            <h1 class="section-heading text-yellow">1L+</h1>
+                            <h1 class="section-heading text-yellow"><span class="counter">1</span>L+</h1>
                             <h4 class="text-normal">Lines of Code</h4>
                         </div>
                     </div>
                     <div class="skills-container">
                         <div class="skill">
-                            <h1 class="section-heading text-yellow">8+</h1>
+                            <h1 class="section-heading text-yellow"><span class="counter">8</span>+</h1>
                             <h4 class="text-normal">Languages</h4>
                         </div>
                         <div class="skill">
-                            <h1 class="section-heading text-yellow">350+</h1>
+                            <h1 class="section-heading text-yellow"><span class="counter">350</span>+</h1>
                             <h4 class="text-normal">Coffee Cups</h4>
                         </div>
                     </div>
                     <div class="skills-container">
                         <div class="skill">
-                            <h1 class="section-heading text-yellow">1M+</h1>
+                            <h1 class="section-heading text-yellow"><span class="counter">1</span>M+</h1>
                             <h4 class="text-normal">Pixels Designed</h4>
                         </div>
                     </div>
@@ -109,7 +128,7 @@
                     <div class="illustration-container">
                         <i class="fa fa-cogs text-dark illustration"></i>
                     </div>
-                    <div class="coding-skills text-dark">
+                    <div class="coding-skills text-dark wow animated slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <h4 class="technical-skill-heading">Languages & <br> Frameworks</h4>
                         <ul class="technical-skill-list">
                             <li class="skill-list-item">C</li>
@@ -125,7 +144,7 @@
                             <li class="skill-list-item">Java FX</li>
                         </ul>
                     </div>
-                    <div class="coding-skills text-dark">
+                    <div class="coding-skills text-dark wow animated slideInDown" data-wow-duration="1s" data-wow-delay=".2s">
                         <h4 class="technical-skill-heading">Designing <br>& Art</h4>
                         <ul class="technical-skill-list">
                             <li class="skill-list-item">UI / UX</li>
@@ -144,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section id="projects-section">
+        <section id="projects-section" class="wow animated slideInLeft" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="projects-content-container container bg-grey">
                 <div class="header-container">
                     <h1 class="section-heading text-dark underline-yellow">
@@ -197,9 +216,16 @@
                         </div>
                     </a>
                 </div>
+                <div class="project-container project-3">
+                    <a href="https://github.com/rohit-rmethwani" class="button-container mail-button mail-button-link" target="__tab">
+                        <button class="button">
+                            <h3 class="button-text">More Work!</h3>
+                        </button>
+                    </a>
+                </div>
             </div>
         </section>
-        <section id="footer">
+        <section id="contact" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="footer-content-container container bg-yellow">
                 <div class="heading-container">
                     <h1 class="section-heading text-dark underline">
@@ -207,25 +233,23 @@
                     </h1>
                 </div>
                 <div class="links-content-container container bg-grey">
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rohit.methwani.design" class="link" target="__tab"><i class="fab fa-instagram fa-3x"></i></i></a>
-                        <a href="https://medium.com/@rohit.methwani31" class="link" target="__tab"><i class="fab fa-medium-m fa-3x"></i></a>
-                        <a href="https://www.behance.net/rohitmethwanidesign" class="link" target="__tab"><i class="fab fa-behance fa-3x"></i></a>
-                        <a href="https://dribbble.com/rohit_me" class="link" target="__tab"><i class="fab fa-dribbble fa-3x"></i></a>
-                        <a href="https://www.linkedin.com/in/rohit-methwani-72344215a/" class="link" target="__tab"><i class="fab fa-linkedin-in fa-3x"></i></a>
-                        <a href="https://github.com/rohit-rmethwani" class="link" target="__tab"><i class="fab fa-github fa-3x"></i></a>
+                    <div class="social-links-container">
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/rohit.methwani.design" class="link" target="__tab"><i class="fab fa-instagram fa-3x"></i></i></a>
+                            <a href="https://medium.com/@rohit.methwani31" class="link" target="__tab"><i class="fab fa-medium-m fa-3x"></i></a>
+                            <a href="https://www.behance.net/rohitmethwanidesign" class="link" target="__tab"><i class="fab fa-behance fa-3x"></i></a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://dribbble.com/rohit_me" class="link" target="__tab"><i class="fab fa-dribbble fa-3x"></i></a>
+                            <a href="https://www.linkedin.com/in/rohit-methwani-72344215a/" class="link" target="__tab"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                            <a href="https://github.com/rohit-rmethwani" class="link" target="__tab"><i class="fab fa-github fa-3x"></i></a>
+                        </div>
                     </div>
-                    <div class="mail-button">
-                        <a href="mailto:rohit.methwani31@gmail.com" class="mail-button-link">
-                            <div class="button-wrapper">
-                                <div class="button-container">
-                                    <div class="button">
-                                        <h4 class="button-text">rohit.methwani31@gmail.com</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="mailto:rohit.methwani31@gmail.com" class="button-container mail-button mail-button-link" target="__tab">
+                        <button class="button">
+                            <h3 class="button-text">Drop Me a Hi!</h3>
+                        </button>
+                    </a>
                 </div>
             </div>
             <footer class="main-footer container bg-dark">
@@ -234,7 +258,12 @@
             </footer>
         </section>
         <div id="mouse-trail"></div>
+
         <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="plugins/jquery-easing/easing.js"></script>
+		<script src="plugins/counter-up/jquery.counterup.min.js"></script>
+        <script src="plugins/wow/wow.min.js"></script>
+      	<script src="plugins/waypoints/jquery.waypoints.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
