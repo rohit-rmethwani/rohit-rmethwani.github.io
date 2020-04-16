@@ -146,4 +146,14 @@
 	.project-3{
 		margin: 1em 0em;
 	}
+	.left-side-container-navbar{
+		display: none;
+	}
+	.right-side-container-navbar{
+		padding: 4%;
+		justify-content: flex-start;
+	}
+	.navigation-link{
+		font-size: 3em;
+	}
 }

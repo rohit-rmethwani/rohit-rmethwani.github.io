@@ -16,7 +16,7 @@ html{
 	background-color:var(--yellow);
 }
 body{
-	cursor: url('../images/cursor.png'), auto;
+	/* cursor: url('../images/cursor.png'), auto; */
 }
 #mouse-trail{
 	width: 25px;
@@ -25,6 +25,7 @@ body{
 	opacity: 0.5;
 	border-radius: 50%;
 	position: absolute;
+	display: none;
 }
 /* VARIABLES */
 :root{
@@ -134,6 +135,66 @@ body{
 
 
 /* Navbar */
+/*
+	Open Navbar
+*/
+
+.open-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+	visibility: hidden;
+    transform: scale(2);
+    transition: all .3s ease-in-out;
+}
+.open-nav-active{
+	visibility: visible;
+	opacity: 1;
+    transform: scale(1);
+}
+.close-navbar{
+	text-align: right;
+}
+.close-navbar:hover{
+	color: var(--white);
+	transition: .3s;	
+}
+.navigation-links{
+	list-style: none;
+}
+.navigation-link{
+	font-size: 4em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	margin: 0.5em 0em;
+	text-decoration: none;
+}
+
+.navigation-link:hover{
+	transition: .2s;
+	color: var(--white);
+}
+
+.left-side-container-navbar{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+.location-illustration{
+	font-size: 20em;
+	opacity: 0.3;
+}
+/*
+	Open Navbar
+*/
 .navbar-container{
 	display: flex;
 	flex-direction: row;

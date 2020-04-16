@@ -4,7 +4,9 @@
         <!--*******************META TAGS**********************-->
         <meta charset="utf-8">
 
-        <meta name="description" content="A hardworking Computer Engineering student with experience of developing things with Programming Concepts,designing UI/UX,front end development and other things.">
+        <meta name="description" content="Rohit Methwani - A hardworking Computer Engineering student with experience of developing things with Programming Concepts,designing UI/UX,front end development and other things.">
+
+        <meta name="authoe" content="Rohit Methwani">
 
         <meta name="keywords" content="HTML5,CSS3,jQuery,Responsive Website,Resume, UI/UX, Portfolio, Designer, Developer">
         
@@ -25,23 +27,25 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="navbar">
                 <div class="container bg-dark navbar-container">
                     <div class="logo-container">
                         <a href="index.html" class="logo text-yellow"><h1>RM</h1></a>
                     </div>
-                    <div class="button-container">
-                        <div class="button hamburger">
-                            <span class="hamburg-line"></span>
-                            <span class="hamburg-line"></span>
-                            <span class="hamburg-line"></span>
+                    <div id="hamburger">
+                        <div class="button-container">
+                            <div class="button hamburger">
+                                <span class="hamburg-line"></span>
+                                <span class="hamburg-line"></span>
+                                <span class="hamburg-line"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
         <section id="cover-section" >
-            <div class="container cover-content-container bg-dark wow animated lightSpeedIn" data-wow-duration=".5s" data-wow-delay=".2s">
+            <div class="container cover-content-container bg-dark wow animated slideInDown" data-wow-duration=".5s" data-wow-delay=".2s">
                 <div class="left-side-container">
                     <div class="name-container">
                         <h1 class="name-heading section-heading text-yellow">ROHIT<br>METHWANI</h1>
@@ -50,7 +54,7 @@
                         <p class="text-white">Web Developer</p>
                     </div>
                     <div class="button-wrapper">
-                        <a href="#contact" class="button-container">
+                        <a href="#contact-section" class="button-container">
                             <button class="button">
                                 <h3 class="button-text">Let's Talk</h3>
                             </button>
@@ -225,7 +229,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+        <section id="contact-section" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="footer-content-container container bg-yellow">
                 <div class="heading-container">
                     <h1 class="section-heading text-dark underline">
@@ -258,6 +262,24 @@
             </footer>
         </section>
         <div id="mouse-trail"></div>
+
+        <div class="bg-yellow open-nav" id="open-nav">
+            <div class="left-side-container-navbar container">
+                <i class="fa fa-location-arrow text-dark fa-5x location-illustration"></i>
+            </div>
+            <div class="right-side-container-navbar container">
+                <div class="close-navbar text-dark" id="close-navbar">
+                    <i class="far fa-window-close fa-3x"></i>
+                </div>
+                <ul class="navigation-links" id="navigation-links">
+                    <li><a href="#cover-section" class="text-dark navigation-link">HOME</a></li>
+                    <li><a href="#about-me-section" class="text-dark navigation-link">HELLO THERE</a></li>
+                    <li><a href="#skills-section" class="text-dark navigation-link">WHAT CAN I DO?</a></li>
+                    <li><a href="#projects-section" class="text-dark navigation-link">EXPLORE MY WORK!</a></li>
+                    <li><a href="#contact-section" class="text-dark navigation-link">LET'S TALK</a></li>
+                </ul>
+            </div>
+        </div>
 
         <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="plugins/jquery-easing/easing.js"></script>
