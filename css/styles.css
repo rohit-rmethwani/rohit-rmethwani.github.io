@@ -265,6 +265,7 @@ body{
 .skill-list-item{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2em;
+	margin: 0.5em 0em;
 }
 .illustration-container{
 	display: flex;
@@ -279,6 +280,35 @@ body{
 }
 /* SKILLS SECTION */
 
+/* PROJECTS SECTION */
+.project-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.project{
+	text-align: center;
+	padding: 2%;
+	text-decoration: none;
+	margin: 0.5em 0em;
+}
+.project:hover{
+	background-color: var(--yellow);
+	transition: .3s;
+}
+.project-image{
+	margin: 1em;
+	width: 90%;
+}
+.project-name{
+	font-size: 1.5em;
+}	
+.project-tech{
+	margin: 0;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+/* PROJECTS SECTION */
 
 /* FOOTER SECTION */
 
