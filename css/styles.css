@@ -34,27 +34,6 @@ h1, h2{
 a{
 	color: white;
 }
-.flex{
-	display: flex;
-}
-.flex-row{
-	flex-direction: row;
-}
-.flex-column{
-	flex-direction: column;
-}
-.justify-center{
-	justify-content: center;
-}
-.justify-end{
-	justify-content: flex-end;
-}
-.justify-space-between{
-	justify-content: space-between;
-}
-.align-end{
-	align-self: flex-end;
-}
 .text-primary-blue{
 	color: var(--blue);
 }
@@ -78,9 +57,11 @@ a{
 }
 .primary-heading{
 	font-size: 6.25rem;
+	margin-bottom: 1.5rem;
 }
 .secondary-heading{
 	font-size: 3.125rem;
+	margin-bottom: 1.5rem;
 }
 .tertiary-heading{
 	font-size: 1.5rem;
@@ -158,12 +139,23 @@ a{
 	cursor: pointer;
 }
 
+.content-container{
+	padding: 0.625rem;
+}
+
 nav{
 	font-family: 'Michroma', sans-serif;
 	background-color: var(--light-blue);
 	border-radius: 0px 0px 10px 10px;
 	padding: 1rem;
-	margin-bottom: 24px;
+	/* margin-bottom: 24px; */
+	position: fixed;
+	width: 77%;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 999;
 }
 nav ul {
 	list-style: none;
@@ -173,18 +165,54 @@ nav ul li{
 }
 nav a{
 	text-decoration: none;
-	font-weight: lighter;
+	/* font-weight: lighter; */
 	font-size: 1.125rem;
+	color: var(--background-1)
 }
 nav a:hover{
-	color: var(--background-1);
+	color: var(--background-3);
+	text-decoration: underline;
+}
+.navigation-links-container{
+	display: flex;
+	flex-direction: row;
 }
 
-
+/* HERO SECTION */
 #hero-section{
-	padding: 0.5rem 0rem;
+	padding: 5rem 0rem;
 }
 
+.hero-content-container .left-side-container {
+	margin-right: 1.5rem;
+}
+
+.hero-content-container .left-side-container .buttons-container #lets-talk-button{
+	margin-right: 1rem;
+}
+
+.hero-content-container .left-side-container p{
+	margin-bottom: 1.5rem;
+}
+
+.hero-content-container{
+	display: flex;
+	flex-direction: row;
+}
+
+.hero-content-container .left-side-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#hero-section .pre-heading{
+	font-weight: bold;
+}
+
+/* HERO SECTION */
+
+/* ABOUT ME */
 .skills-container{
 	display: flex;
 	flex-direction: row;
@@ -200,21 +228,45 @@ nav a:hover{
 #about-me p{
 	line-height: 1.7rem;
 }
+
+#about-me .about-me-upper-section{
+	margin-bottom: 1.5rem;
+}
+
+#about-me{
+	margin-bottom: 3rem;
+}
+
+#about-me .skills-container .design-ul{
+	margin-right: 3rem;
+}
+
+#about-me .skills-container .tertiary-heading{
+	margin-bottom: 1.5rem;
+}
+
+/* ABOUT ME */
+
+/* PROJECTS SECTION */
+#projects-section{
+	margin-bottom: 3rem;
+}
+#projects-section .primary-heading{
+	margin-bottom: 3rem;
+}
 .projects-container{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
-.project-card{
+#projects-section .project-card{
 	background-color: var(--background-2);
 	border-radius: 10px;
 	text-decoration: none;
+	width: 31%;
 }
 .project-card p{
 	font-size: 1rem;
-}
-.content-container{
-	padding: 0.625rem;
 }
 .project-card button{
 	width: 100%;
@@ -228,6 +280,7 @@ nav a:hover{
 .project-card .image-container{
 	overflow: hidden;
 	border-radius: 5px 5px 0px 0px;
+	text-align: center;
 }
 .project-card img:hover{
 	transform: scale(1.1);
@@ -235,6 +288,24 @@ nav a:hover{
 }
 .project-card a{
 	text-decoration: none;
+}
+.project-card .image-container img{
+	width: 100%;
+}
+.project-card .content-container .card-heading{
+	margin-bottom: 0.5rem;
+}
+.project-card .content-container p{
+	margin-bottom: 1rem;
+}
+/* PROJECTS SECTION */
+
+/* RECOGNITIONS SECTION */
+#recognitions-section{
+	margin-bottom: 3rem;
+}
+#recognitions-section .primary-heading{
+	margin-bottom: 3rem;
 }
 .recognition-link{
 	text-decoration: none;
@@ -246,9 +317,34 @@ nav a:hover{
 #recognitions-section .card-heading{
 	font-size: 1.25rem;
 }
+#recognitions-section .project-card{
+	background-color: var(--background-2);
+}
 #recognitions-section .project-card:hover{
 	cursor: initial;
 }
+#recognitions-section .project-card .content-container{
+	padding: 1rem 2rem;
+}
+#recognitions-section .project-card .content-container button{
+	margin-bottom: 1rem;
+}
+#recognitions-section .project-card .content-container>div{
+	margin-bottom: 1rem;
+}
+#recognitions-section .project-card .content-container>div>.card-heading{
+	margin-bottom: 0.5rem;
+}
+#recognitions-section .project-card .content-container #view-project-button{
+	margin-right: 1rem;
+}
+/* RECOGNITIONS SECTION */
+
+/* TESTIMONIALS SECTION */
+#testimonials-section{
+	margin-bottom: 3rem;
+}
+
 .testimonial-card{
 	display: flex;
 	flex-direction: row;
@@ -263,7 +359,7 @@ nav a:hover{
 }
 .testimonial-card p{
 	font-size: 1.25rem;
-	line-height: 1.85rem;
+	line-height: 1.5rem;
 }
 .testimonials{
 	display: flex;
@@ -278,18 +374,40 @@ nav a:hover{
 	display: flex;
 	flex-direction: row;
 }
+.testimonial-card .identity .identity-name .tertiary-heading{
+	margin-bottom: 0.5rem;
+}
+
+.testimonial-card .identity img{
+	margin-right: 1rem;
+	margin-bottom: 0.5rem;
+}
+
 .testimonial-card .identity .identity-name{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+/* TESTIMONIALS SECTION */
+
+/* SOCIAL LINKS */
+#footer{
+	margin-bottom: 3rem;
+}
+#footer .social-links-container{
+	margin-top: 3rem;
+}
 .social-link{
 	font-weight: normal;
 	font-size: 0.75rem;
+	margin-right: 1.5rem;
 }
 .social-link:hover{
 	color: var(--green);
 }
+/* SOCIAL LINKS */
+
+/* COPYRIGHTS FOOTER */
 .copyrights-footer .content-container{
 	background-color: var(--background-2);
 	padding: 2rem;
@@ -301,3 +419,4 @@ nav a:hover{
 	font-family: 'Michroma', sans-serif;
 	font-size: 1.25rem;
 }
+/* COPYRIGHTS FOOTER */

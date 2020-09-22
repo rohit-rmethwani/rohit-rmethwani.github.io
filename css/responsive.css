@@ -5,155 +5,254 @@
 }
 
 @media(min-width:768px) and (max-width:1299px){
-	.cover-content-container{
-		padding: 5%;
+	nav{
+		width: 85%;
+	}
+	body{
+		padding: 2.5rem;
+	}
+	.body{
+		font-size: 1.0625rem;
+	}
+	p{
+		line-height: 1.5rem;
+	}
+	#cover-image{
+		width: 100%;
+		height: 100%;
+	}
+	.primary-heading{
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+	.pre-heading{
+		font-size: 2rem;
+	}
+	.secondary-heading{
+		font-size: 1.75rem;
 	}
 
-	.name-heading{
-		font-size: 5em;
+	.my-btn{
+		font-size: 1rem;
 	}
-	.right-side-container .img{
-		width: 60%;
+
+	.card-heading{
+		font-size: 1.125rem;
 	}
-	.image-container::after{
-		width: 60%;
-		height: 90%;
-		top: 10px;
-		left: 100px;
+
+	#hero-section .primary-heading{
+		margin-bottom: 0.5rem;
+		line-height: normal;
 	}
-	.all-skills-container{
-		flex-direction: column;
+	#hero-section .pre-heading{
+		font-weight: normal;
 	}
-	.illustration-container{
-		display: none;
+
+	#hero-section .left-side-container{
+		margin: 1.125rem;
 	}
-	.coding-skills{
-		margin-right: 1em;
+	
+	#about-me .skills-container .design-ul .tertiary-heading{
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
 	}
-	.links-content-container{
-		padding: 2em;
+
+	#about-me .skills-container .design-ul{
+		margin: 0rem;
+		margin-bottom: 2rem;
+	}
+	#projects-section .primary-heading{
+		margin-bottom: 2rem;
+	}
+	.project-card button{
+		font-size: 1rem;
+	}
+	#recognitions-section .primary-heading {
+		margin-bottom: 2rem;
+	}
+	#recognitions-section {
+		margin-bottom: 2rem;
+	}
+	#testimonials-section {
+		margin-bottom: 2rem;
+	}
+	.testimonial-card .content-container {
+		padding: 0rem;
+	}
+	.testimonial-card p {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+	#footer .social-link i{
+		font-size: 2rem;
+	}
+	#footer {
+		margin-bottom: 1rem;
 	}
 }
 /*FOR SMALLER DEVICES()*/
 @media(max-width: 767px){
-	.text-normal{
-		font-size: 1.3em;
+	h1,h2{
+		line-height: normal;
 	}
-	.mouse-trail{
+	nav{
 		display: none;
 	}
-	.cover-content-container{
+	.primary-heading{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.pre-heading{
+		font-size: 1.5rem;
+	}
+	.body{
+		font-size: 1.25rem;
+	}
+	.my-btn{
+		font-size: 1rem;
+	}
+	.secondary-heading{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	body{
+		padding: 1.25rem;
+	}
+	#hero-section{
+		padding-top: 3rem;
+		padding-bottom: 0rem;
+	}
+	.hero-content-container{
 		flex-direction: column-reverse;
-		padding: 5%;
+		/* justify-content: center; */
+		/* align-items: center; */
 	}
-	.button-wrapper{
+	#hero-section .content-container{
+		padding: 0rem;
+		/* text-align: center; */
+	}
+	.hero-content-container .buttons-container button{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.hero-content-container .buttons-container{
+		display: flex;
 		flex-direction: column;
-		justify-content: center;
 	}
-	.button-container{
-		margin: 1em 0em;
+	.hero-content-container #cover-image{
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0.5rem;
 	}
-	.left-side-container{
-		margin: 5%;
-	}
-	.right-side-container .img{
-		width: 80%;
-	}
-	.left-side-container div{
-		justify-content: center;
+	.hero-content-container .image-container{
 		text-align: center;
 	}
-	.left-side-container .name-heading{
-		font-size: 4em;
-		margin-top: 10%;
+	.hero-content-container .left-side-container{
+		justify-content: flex-start;
+		margin: 0rem;
 	}
-	.image-container::after{
-		width: 80%;
-		top: 10px;
-		left: 50px;
+
+	#about-me{
+		margin-bottom: 1.5rem;
 	}
+
+	#about-me .content-container{
+		padding: 0rem;
+	}
+
+	#about-me .skills-container .design-ul{
+		margin: 0rem;
+		margin-bottom: 1rem;
+	}
+
+	#about-me .about-me-upper-section {
+		margin-bottom: 0.625rem;
+	}
+
+	#about-me .skills-container .design-ul .tertiary-heading{
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	#projects-section{
+		margin-bottom: 1.5rem;
+	}
+
+	#projects-section .primary-heading{
+		margin-bottom: 1rem;
+	}
+
+	.projects-container{
+		flex-direction: column;
+	}
+	.projects-container .mr-3, .projects-container .mr-4, .projects-container .mr-2{
+		margin: 0px
+	}
+	#projects-section .project-card{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.project-card img{
+		width: 100%;
+	}
+	.project-card button{
+		font-size: 1rem;
+	}
+
+	.project-card p{
+		font-size: 1.25rem;
+	}
+
+	#recognitions-section{
+		margin-bottom: 1.5rem;
+	}
+
+	#recognitions-section .primary-heading{
+		margin-bottom: 1rem;
+	}
+
+	#recognitions-section .project-card .content-container{
+		padding: 1rem;
+	}
+	#recognitions-section .project-card .content-container button{
+		width: 100%;
+	}
+
 	.skills-container{
 		flex-direction: column;
 	}
-	.all-skills-container{
-		flex-direction: column;
-	}
-	.skill-list-item{
-		font-size: 1.3em;
-	}
-	.section-heading{
-		text-align: center;
-	}
-	.text-content-container{
-		text-align: center;
+
+	#testimonials-section{
+		margin-bottom: 1.5rem;
 	}
 
-	.techincal-skills-container{
-		flex-direction: column;
-		text-align: center;
-	}
-	.coding-skills{
-		margin: 2em 0em;
-	}
-	.illustration-container{
-		display: none;
+	#testimonials-section .content-container{
+		padding: 0rem;
 	}
 
-	.footer-content-container{
-		flex-direction: column;
+	#footer .social-links-container{
+		margin-top: 0rem;
 	}
 
-	.social-links{
-		margin: 1em;
+	#footer{
+		margin-bottom: 1.5rem;
+	}
+
+	#footer .social-link i{
+		margin-bottom: 1rem;
+		font-size: 2rem;
+	}
+
+	#footer .content-container{
+		padding: 0rem;
+	}
+
+	.copyrights-footer .content-container{
 		flex-direction: column;
 	}
 
-	.link{
-		margin: 1em 0em;
-	}
-
-	.links-content-container{
-		padding: 10%;
-		margin-bottom: 2em;
-	}
-
-	.social-links-container{
-		flex-direction: column;
-	}
-
-	.social-links{
-		flex-direction: row;
-		text-align: left;
-	}
-	.link{
-		margin: 0em 1.5em;
-		padding: 0;
-	}
-	.mail-button h4{
-		font-size: 1em;
-	}
-
-	.main-footer{
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	.footer-text{
-		margin: 0.5em;
-	}
-	.project-container{
-		flex-direction: column;
-	}
-	.project-3{
-		margin: 1em 0em;
-	}
-	.left-side-container-navbar{
-		display: none;
-	}
-	.right-side-container-navbar{
-		padding: 4%;
-		justify-content: flex-start;
-	}
-	.navigation-link{
-		font-size: 3em;
+	.copyrights-footer .content-container h2{
+		font-size: 1rem;
+		margin-bottom: 1rem;
 	}
 }
