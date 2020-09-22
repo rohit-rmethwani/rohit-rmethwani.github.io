@@ -25,6 +25,8 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--background-1);
 	color: var(--text-color);
+	max-width: 1920px;
+	margin: auto;
 }
 h1, h2{
 	font-family: 'Michroma', sans-serif;
@@ -150,8 +152,9 @@ nav{
 	padding: 1rem;
 	/* margin-bottom: 24px; */
 	position: fixed;
-	width: 77%;
+	width: 100%;
 	top: 0;
+	left: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -198,6 +201,7 @@ nav a:hover{
 .hero-content-container{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 .hero-content-container .left-side-container{
@@ -207,7 +211,7 @@ nav a:hover{
 }
 
 #hero-section .pre-heading{
-	font-weight: bold;
+	font-weight: normal;
 }
 
 /* HERO SECTION */

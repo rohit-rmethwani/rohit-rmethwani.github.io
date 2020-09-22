@@ -1,8 +1,5 @@
 /*LARGE DEVICES*/
 
-@media(min-width: 1300px){
-/*	This is working fine*/
-}
 
 @media(min-width:768px) and (max-width:1299px){
 	nav{
