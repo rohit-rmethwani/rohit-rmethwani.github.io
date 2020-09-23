@@ -145,19 +145,26 @@ a{
 	padding: 0.625rem;
 }
 
+nav .content-container{
+	margin: 0rem 5rem;
+	background-color: var(--light-blue);
+	opacity: 0.9;
+	/* width: 100%; */
+	border-radius: 0px 0px 10px 10px;
+	padding: 1rem 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 nav{
 	font-family: 'Michroma', sans-serif;
-	background-color: var(--light-blue);
-	border-radius: 0px 0px 10px 10px;
-	padding: 1rem;
+	/* padding: 0rem 10rem; */
 	/* margin-bottom: 24px; */
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	z-index: 999;
 }
 nav ul {

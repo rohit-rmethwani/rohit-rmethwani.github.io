@@ -1,4 +1,28 @@
 $(function () {
+
+	$(window).bind('scroll', function() {
+		if($(window).scrollTop() >= $('#hero-section').offset().top){
+			$("nav .content-container").css("transition", "0.2s");
+			$("nav .content-container").css("background-color", "#98B9F2");
+		}
+		if($(window).scrollTop() >= $('#projects-section').offset().top - 120){
+			$("nav .content-container").css("transition", "0.2s");
+			$("nav .content-container").css("background-color", "#6F9CEB");
+		}
+		if($(window).scrollTop() >= $('#about-me').offset().top - 120){
+			$("nav .content-container").css("transition", "0.2s");
+			$("nav .content-container").css("background-color", "#FFAD5C");
+		}
+		if($(window).scrollTop() >= $('#recognitions-section').offset().top - 120){
+			$("nav .content-container").css("transition", "0.2s");
+			$("nav .content-container").css("background-color", "#F49097");
+		}
+		if($(window).scrollTop() >= $('#testimonials-section').offset().top - 120){
+			$("nav .content-container").css("transition", "0.2s");
+			$("nav .content-container").css("background-color", "#F5E960");
+		}
+	});
+
 	$("#hamburger").click(function(){
 		$("#open-nav").addClass("open-nav-active");
 	});
