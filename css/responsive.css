@@ -120,7 +120,10 @@
 		font-size: 1.5rem;
 	}
 	.body{
-		font-size: 1.25rem;
+		font-size: 1rem;
+	}
+	p{
+		font-size: 1rem;
 	}
 	.my-btn{
 		font-size: 1rem;
@@ -214,7 +217,7 @@
 	}
 
 	.project-card p{
-		font-size: 1.25rem;
+		font-size: 1rem;
 	}
 
 	#recognitions-section{
@@ -230,6 +233,10 @@
 	}
 	#recognitions-section .project-card .content-container button{
 		width: 100%;
+	}
+
+	.testimonial-card p{
+		font-size: 1rem;
 	}
 
 	.skills-container{
