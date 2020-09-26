@@ -59,7 +59,7 @@ a{
 	color: var(--text-color-2);
 }
 .primary-heading{
-	font-size: 6.25rem;
+	font-size: 5rem;
 	margin-bottom: 1.5rem;
 }
 .secondary-heading{
@@ -234,7 +234,7 @@ nav a:hover{
 }
 
 #about-me{
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }
 
 #about-me .skills-container .design-ul{
@@ -249,7 +249,7 @@ nav a:hover{
 
 /* PROJECTS SECTION */
 #projects-section{
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }
 #projects-section .primary-heading{
 	margin-bottom: 3rem;
@@ -302,7 +302,7 @@ nav a:hover{
 
 /* RECOGNITIONS SECTION */
 #recognitions-section{
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }
 #recognitions-section .primary-heading{
 	margin-bottom: 3rem;
@@ -342,12 +342,13 @@ nav a:hover{
 
 /* TESTIMONIALS SECTION */
 #testimonials-section{
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }
 
 .testimonial-card{
 	display: flex;
 	flex-direction: row;
+	margin: 3rem 0rem;
 }
 .testimonial-card .content-container{
 	background-color: var(--background-1);
