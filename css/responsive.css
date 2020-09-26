@@ -1,0 +1,272 @@
+/*LARGE DEVICES*/
+
+
+@media(min-width:768px) and (max-width:1299px){
+	body{
+		padding: 0rem 2.5rem;
+	}
+	.body{
+		font-size: 1.0625rem;
+	}
+	p{
+		line-height: 1.5rem;
+	}
+	#cover-image{
+		width: 100%;
+		height: 100%;
+	}
+	.primary-heading{
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+	.pre-heading{
+		font-size: 2rem;
+	}
+	.secondary-heading{
+		font-size: 1.75rem;
+	}
+
+	.my-btn{
+		font-size: 1rem;
+	}
+
+	.card-heading{
+		font-size: 1.125rem;
+	}
+
+	#hero-section .primary-heading{
+		margin-bottom: 0.5rem;
+		line-height: normal;
+	}
+	#hero-section .pre-heading{
+		font-weight: normal;
+	}
+
+	#hero-section .left-side-container{
+		margin: 1.125rem;
+	}
+	
+	#about-me .skills-container .design-ul .tertiary-heading{
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	#about-me .skills-container .design-ul{
+		margin: 0rem;
+		margin-bottom: 2rem;
+	}
+	#projects-section .primary-heading{
+		margin-bottom: 2rem;
+	}
+	.project-card button{
+		font-size: 1rem;
+	}
+	#recognitions-section .primary-heading {
+		margin-bottom: 2rem;
+	}
+	#recognitions-section {
+		margin-bottom: 2rem;
+	}
+	#testimonials-section {
+		margin-bottom: 2rem;
+	}
+	.testimonial-card .content-container {
+		padding: 0rem;
+	}
+	.testimonial-card p {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+	#footer .social-link i{
+		font-size: 2rem;
+	}
+	#footer {
+		margin-bottom: 1rem;
+	}
+}
+/*FOR SMALLER DEVICES()*/
+@media(max-width: 767px){
+	h1,h2{
+		line-height: normal;
+	}
+	nav .content-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	nav .left-side-nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 0.4rem;
+	}
+	nav .right-side-nav ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	nav .right-side-nav ul .nav-item{
+		margin: 0rem;
+	}
+	nav a{
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+	.primary-heading{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.pre-heading{
+		font-size: 1.5rem;
+	}
+	.body{
+		font-size: 1.25rem;
+	}
+	.my-btn{
+		font-size: 1rem;
+	}
+	.secondary-heading{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	body{
+		padding: 0rem 1.25rem;
+	}
+	#hero-section{
+		padding-top: 3rem;
+		padding-bottom: 0rem;
+	}
+	.hero-content-container{
+		flex-direction: column-reverse;
+		/* justify-content: center; */
+		/* align-items: center; */
+	}
+	#hero-section .content-container{
+		padding: 0rem;
+		/* text-align: center; */
+	}
+	.hero-content-container .buttons-container button{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.hero-content-container .buttons-container{
+		display: flex;
+		flex-direction: column;
+	}
+	.hero-content-container #cover-image{
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0.5rem;
+	}
+	.hero-content-container .image-container{
+		text-align: center;
+	}
+	.hero-content-container .left-side-container{
+		justify-content: flex-start;
+		margin: 0rem;
+	}
+
+	#about-me{
+		margin-bottom: 1.5rem;
+	}
+
+	#about-me .content-container{
+		padding: 0rem;
+	}
+
+	#about-me .skills-container .design-ul{
+		margin: 0rem;
+		margin-bottom: 1rem;
+	}
+
+	#about-me .about-me-upper-section {
+		margin-bottom: 0.625rem;
+	}
+
+	#about-me .skills-container .design-ul .tertiary-heading{
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	#projects-section{
+		margin-bottom: 1.5rem;
+	}
+
+	#projects-section .primary-heading{
+		margin-bottom: 1rem;
+	}
+
+	.projects-container{
+		flex-direction: column;
+	}
+	.projects-container .mr-3, .projects-container .mr-4, .projects-container .mr-2{
+		margin: 0px
+	}
+	#projects-section .project-card{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.project-card img{
+		width: 100%;
+	}
+	.project-card button{
+		font-size: 1rem;
+	}
+
+	.project-card p{
+		font-size: 1.25rem;
+	}
+
+	#recognitions-section{
+		margin-bottom: 1.5rem;
+	}
+
+	#recognitions-section .primary-heading{
+		margin-bottom: 1rem;
+	}
+
+	#recognitions-section .project-card .content-container{
+		padding: 1rem;
+	}
+	#recognitions-section .project-card .content-container button{
+		width: 100%;
+	}
+
+	.skills-container{
+		flex-direction: column;
+	}
+
+	#testimonials-section{
+		margin-bottom: 1.5rem;
+	}
+
+	#testimonials-section .content-container{
+		padding: 0rem;
+	}
+
+	#footer .social-links-container{
+		margin-top: 0rem;
+	}
+
+	#footer{
+		margin-bottom: 1.5rem;
+	}
+
+	#footer .social-link i{
+		margin-bottom: 1rem;
+		font-size: 2rem;
+	}
+
+	#footer .content-container{
+		padding: 0rem;
+	}
+
+	.copyrights-footer .content-container{
+		flex-direction: column;
+	}
+
+	.copyrights-footer .content-container h2{
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+}
