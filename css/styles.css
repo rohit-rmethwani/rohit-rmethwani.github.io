@@ -373,13 +373,9 @@ nav a:hover{
 	display: flex;
 	flex-direction: row;
 }
-.testimonial-card .identity .identity-name .tertiary-heading{
-	margin-bottom: 0.5rem;
-}
 
 .testimonial-card .identity img{
 	margin-right: 1rem;
-	margin-bottom: 0.5rem;
 }
 
 .testimonial-card .identity .identity-name{
@@ -402,7 +398,7 @@ nav a:hover{
 	margin-right: 1.5rem;
 }
 .social-link:hover{
-	color: var(--green);
+	color: var(--yellow);
 }
 /* SOCIAL LINKS */
 
