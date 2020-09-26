@@ -2,11 +2,8 @@
 
 
 @media(min-width:768px) and (max-width:1299px){
-	nav{
-		width: 85%;
-	}
 	body{
-		padding: 2.5rem;
+		padding: 0rem 2.5rem;
 	}
 	.body{
 		font-size: 1.0625rem;
@@ -92,8 +89,28 @@
 	h1,h2{
 		line-height: normal;
 	}
-	nav{
-		display: none;
+	nav .content-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	nav .left-side-nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 0.4rem;
+	}
+	nav .right-side-nav ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	nav .right-side-nav ul .nav-item{
+		margin: 0rem;
+	}
+	nav a{
+		font-size: 0.9rem;
+		font-weight: 600;
 	}
 	.primary-heading{
 		font-size: 2rem;
@@ -113,7 +130,7 @@
 		margin-bottom: 1rem;
 	}
 	body{
-		padding: 1.25rem;
+		padding: 0rem 1.25rem;
 	}
 	#hero-section{
 		padding-top: 3rem;
