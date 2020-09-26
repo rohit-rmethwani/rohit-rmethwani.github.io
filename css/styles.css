@@ -19,6 +19,7 @@
 }
 html{
 	scroll-behavior: smooth;
+	line-height: 1.875rem;
 }
 body{
 	padding: 0px 10rem;
@@ -82,6 +83,7 @@ a{
 }
 .body{
 	font-size: 1.25rem;
+	line-height: 1.875rem;
 }
 .button-captions{
 	font-size: 1.25rem;
@@ -227,10 +229,6 @@ nav a:hover{
 	margin: 0.625rem;
 }
 
-#about-me p{
-	line-height: 1.7rem;
-}
-
 #about-me .about-me-upper-section{
 	margin-bottom: 1.5rem;
 }
@@ -361,7 +359,6 @@ nav a:hover{
 }
 .testimonial-card p{
 	font-size: 1.25rem;
-	line-height: 1.5rem;
 }
 .testimonials{
 	display: flex;
