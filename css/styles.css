@@ -294,6 +294,7 @@ nav a:hover{
 }
 .project-card .content-container .card-heading{
 	margin-bottom: 0.5rem;
+	line-height: 1.8rem;
 }
 .project-card .content-container p{
 	margin-bottom: 1rem;
