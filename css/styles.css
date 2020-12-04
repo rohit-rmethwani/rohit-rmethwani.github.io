@@ -297,6 +297,10 @@ nav a:hover{
 }
 .project-card .content-container p{
 	margin-bottom: 1rem;
+	line-height: 1.5rem;
+}
+#projects-section .second-row-projects{
+	margin: 2rem 0rem;
 }
 /* PROJECTS SECTION */
 
@@ -348,7 +352,7 @@ nav a:hover{
 .testimonial-card{
 	display: flex;
 	flex-direction: row;
-	margin: 3rem 0rem;
+	margin: 3rem 0rem	;
 }
 .testimonial-card .content-container{
 	background-color: var(--background-1);
