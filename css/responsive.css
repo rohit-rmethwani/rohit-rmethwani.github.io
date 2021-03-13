@@ -192,6 +192,7 @@
         margin-right: 15px;
         border-radius: 5px;
         font-size: 16px;
+        font-weight: 400;
     }
 
     nav .content-container{
@@ -199,12 +200,9 @@
         padding: 10px 20px;
     }
 
-    nav a{
-        font-size: 18px;
-    }
 
     nav ul li{
-        margin-right: 10px;
+        margin-right: 15px;
     }
 
     nav .left-side-nav{
@@ -216,6 +214,7 @@
 
     nav a{
         width: 30vw;
+        font-size: 16px;
     }
 
     nav .menu-icon{
@@ -368,7 +367,7 @@
 
     .social-links-container{
         margin: 0px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     #contact-section .hero-heading{
@@ -389,6 +388,6 @@
 
     .copyrights-footer{
         padding: 20px 20px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
