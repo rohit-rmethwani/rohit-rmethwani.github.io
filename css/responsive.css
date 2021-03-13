@@ -1,0 +1,375 @@
+@media(max-width: 1280px) and (min-width: 1024px){
+    .content-container{
+        padding: 40px 100px;
+    }
+    .hero-heading{
+        font-size: 32px;
+        max-width: 600px;
+    }
+
+    #hero-section .img-responsive{
+        width: 350px;
+        height: 400px;
+    }
+
+    .copyrights-footer{
+        padding: 20px 100px;
+    }
+}
+
+@media(max-width: 1023px) and (min-width: 767px){
+    .content-container{
+        padding: 20px 50px;
+    }
+
+    .navbar .content-container{
+        padding: 10px 50px;
+    }
+
+    .navbar .nav-link{
+        font-size: 18px;
+    }
+
+    .navbar img{
+        width: 60%;
+    }
+
+    .hero-heading{
+        font-size: 28px;
+    }
+
+    #hero-section .img-responsive{
+        width: 40vw;
+    }
+
+    #hero-section .hero-heading{
+        max-width: 500px;
+    }
+
+    #hero-section .content-container{
+        padding: 40px 50px;
+    }
+
+    .btn{
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+
+    #work-section .hero-heading{
+        margin-bottom: 20px;
+    }
+
+    .project-card{
+        padding: 15px 15px;
+    }
+
+    .project-card-heading{
+        font-size: 20px;
+    }
+
+    .project-card .body-text{
+        font-size: 18px;
+    }
+    .project-card-link-container{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px;
+    }
+
+    .project-card-link{
+        font-size: 18px;
+    }
+
+    .recognition-card-left-side{
+        padding: 25px 20px;
+    }
+
+    .recognition-card-right-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #recognitions-section .hero-heading{
+        margin-bottom: 20px;
+    }
+
+    .copyrights-footer{
+        padding: 20px 50px;
+    }
+
+    #testimonials-section .hero-heading{
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px;
+    }
+
+    .testimonial-card-right-side{
+        padding: 0px;
+    }
+
+    .testimonial-card-left-side{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card .testimonial-image{
+        /* width: 200px;
+        height: 200px; */
+        display: none;
+    }
+
+    .testimonial-card .body-text{
+        font-size: 18px;
+    }
+
+    .testimonial-card .designation{
+        margin-bottom: 5px;
+    }
+
+    .testimonial-card-left-side{
+        margin: 0px;
+    }
+
+    .testimonial-card-upper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-card-upper-left-side{
+        display: block;
+    }    
+
+    .testimonial-card .testimonial-card-upper-left-side .testimonial-image-small{
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        display: block;
+    }
+    .testimonial-card-upper-right-side{
+        margin-left: 15px;
+    }
+
+
+    #about-section .hero-heading{
+        margin-bottom: 20px;
+    }
+
+    #about-section .body-text{
+        font-size: 20px;
+    }
+
+    #about-section .btn{
+        margin-top: 20px;
+    }
+
+    #contact-section .hero-heading{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 767px){
+    .content-container{
+        padding: 20px 20px;
+    }
+
+    .btn{
+        padding: 10px;
+        margin-right: 15px;
+        border-radius: 5px;
+    }
+
+    nav .content-container{
+        /* flex-direction: column; */
+        padding: 10px 20px;
+    }
+
+    nav a{
+        font-size: 16px;
+    }
+
+    nav ul li{
+        margin-right: 10px;
+    }
+
+    nav .left-side-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    nav a{
+        width: 30vw;
+    }
+
+    nav .menu-icon{
+        /* display: inline-block; */
+    }
+
+    nav .other-nav-links{
+        /* display: none; */
+    }
+
+    .hero-heading{
+        font-size: 24px;
+    }
+
+    .left-side-hero{
+        margin: 0px;
+    }
+
+    .right-side-hero{
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .hero-button-container{
+        margin-top: 10px;
+    }
+
+    #hero-section .content-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #hero-section .img-responsive{
+        width: 89.4vw;
+    }
+
+    .card-container-row-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card{
+        padding: 15px 20px;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    .project-card-link-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card-link-container{
+        margin: 10px 0px;
+    }
+
+    .testimonial-card{
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .testimonial-card .testimonial-image{
+        /* width: 200px;
+        height: 200px; */
+        display: none;
+    }
+
+    .testimonial-card-upper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card-upper-left-side{
+        display: block;
+    }    
+
+    .testimonial-card .testimonial-card-upper-left-side .testimonial-image-small{
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+        display: block;
+    }
+    .testimonial-card-upper-right-side{
+        margin-left: 15px;
+    }
+    .testimonial-card-right-side{
+        padding: 0px;
+    }
+
+    .testimonial-card .project-card-heading{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .testimonial-card .designation{
+        font-size: 16px;
+        margin: 0px;
+        line-height: 140%;
+    }
+
+    #testimonials-section .project-card-link-container{
+        margin-top: 15px;
+    }
+
+    .recognition-card{
+        flex-direction: column-reverse;
+    }
+
+    .recognition-card-left-side{
+        padding: 15px 20px;
+    }
+
+    .recognition-card-right-side img{
+        border-radius: 10px;
+    }
+
+    .project-card-link{
+        margin-bottom: 05px;
+    }
+
+    .project-card-link:last-child{
+        margin-bottom: 0px;
+    }
+
+    #about-section .hero-heading{
+        margin-bottom: 15px;
+    }
+
+    #about-section .body-text{
+        font-size: 20px;
+    }
+
+    #about-section .btn{
+        margin-top: 10px;
+    }
+
+    .social-links-container{
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    #contact-section .hero-heading{
+        margin-bottom: 15px;
+    }
+
+    #recognitions-section .hero-heading{
+        margin-bottom: 15px;
+    }
+
+    #testimonials-section .hero-heading{
+        margin-bottom: 15px;
+    }
+
+    #work-section .hero-heading{
+        margin-bottom: 15px;
+    }
+
+    .copyrights-footer{
+        padding: 20px 20px;
+        font-size: 14px;
+    }
+}

@@ -75,10 +75,14 @@ a{
 
 /* Image styles */
 .img-responsive{
-	width: 400px;
+	width: 28vw;
 }
 
 /* Navbar */
+
+nav .left-side-nav{
+	padding-top: 10px;
+}
 
 nav .content-container{
 	background-color: var(--bright-blue);
@@ -115,6 +119,15 @@ nav .right-side-nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+nav .menu-icon{
+	display: none;
+}
+
+nav .other-nav-links{
+	display: flex;
+	flex-direction: row;
 }
 
 /* Hero Section */
@@ -284,6 +297,10 @@ nav .right-side-nav{
 
 .testimonial-card .project-card-link-container{
 	margin: 10px 0px;
+}
+
+.testimonial-card-upper-left-side{
+	display: none;
 }
 
 /* Footer section */

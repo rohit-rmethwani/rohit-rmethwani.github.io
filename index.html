@@ -18,6 +18,7 @@
         <title>Rohit Methwani | Product Designer</title>
         <!--Animation-->
         <!-- <link rel="stylesheet" href="plugins/fontawesome/font-awesome.min.css">    -->
+        
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -47,15 +48,20 @@
                 </div>
                 <div class="right-side-nav">
                     <ul class="navbar-nav navigation-links-container">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#work-section">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-section">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">Contact</a>
-                    </li>
+                        <div class="other-nav-links">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#work-section">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-section">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-section">Contact</a>
+                            </li>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link menu-icon"><i class="fa fa-bars"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -73,7 +79,7 @@
                     </div>
                 </div>
                 <div class="right-side-hero">
-                    <img src="./images/cover-image.png" alt="" width="0px" class="img-responsive">
+                    <img src="./images/cover-image.png" alt="" class="img-responsive">
                 </div>
             </div>
         </section>
@@ -131,10 +137,19 @@
             <div class="content-container">
                 <h1 class="hero-heading">Testimonials</h1>
                     <div class="testimonial-card">
-                        <img src="./images/jinal-thakkar.png" class="testimonial-image" alt="">
+                        <div class="testimonial-card-left-side">
+                            <img src="./images/jinal-thakkar.png" class="testimonial-image" alt="">
+                        </div>
                         <div class="testimonial-card-right-side">
-                            <h1 class="project-card-heading">Jinal Shah Thakkar</h1>
-                            <p class="designation">Co-founder, Study Link Classes</p>
+                            <div class="testimonial-card-upper">
+                                <div class="testimonial-card-upper-left-side">
+                                    <img src="./images/jinal-thakkar.png" class="testimonial-image-small" width="100px" height="100px" alt="">
+                                </div>
+                                <div class="testimonial-card-upper-right-side">
+                                    <h1 class="project-card-heading">Jinal Shah Thakkar</h1>
+                                    <p class="designation">Co-founder, Study Link Classes</p>
+                                </div>
+                            </div>
                             <p class="body-text">We are very happy with our new website! It looks professional and very easy to navigate. Rohit handles things very efficiently and is available for any questions we have. He listened to our needs and was prompt to respond to all of my questions. I will highly recommend him to anyone in the market for a professional website.</p>
                             <div class="project-card-link-container">
                                 <a href="" class="project-card-link">Visit blog <div id="arrow-icon">-></div></a>
@@ -183,6 +198,7 @@
             </div>
         </footer>
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
