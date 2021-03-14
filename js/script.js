@@ -63,6 +63,14 @@ $(function () {
 		easing: 'ease',
 		duration: 1250
 	});
+
+	ScrollReveal().reveal('.hardik-somaiya', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 150,
+		easing: 'ease',
+		duration: 1250
+	});
 	
 	ScrollReveal().reveal('#about-section .body-text', {
 		distance: '40%',
