@@ -175,6 +175,11 @@ nav .other-nav-links{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.card-container-row-one:last-child{
+	margin: 0px;
 }
 
 .project-card{
@@ -197,6 +202,18 @@ nav .other-nav-links{
 
 .sl-website-project{
 	background: #EBF7FE;
+}
+
+.ready-components-project{
+	background: #EEEEF7;
+}
+
+.kasrat-project{
+	background: #FFF0E5;
+}
+
+.mediplus-project{
+	background: #F1F8FF;
 }
 
 .project-card-link-container{
@@ -337,6 +354,7 @@ nav .other-nav-links{
 	justify-content: space-between;
 	font-size: 18px;
 	font-weight: 300;
+	z-index: 99999999;
 }
 
 /* About section */

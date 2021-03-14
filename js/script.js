@@ -1,26 +1,83 @@
 $(function () {
 
-	$(window).bind('scroll', function() {
-		if($(window).scrollTop() >= $('#hero-section').offset().top){
-			$("nav .content-container").css("transition", "0.2s");
-			$("nav .content-container").css("background-color", "#98B9F2");
-		}
-		if($(window).scrollTop() >= $('#projects-section').offset().top - 120){
-			$("nav .content-container").css("transition", "0.2s");
-			$("nav .content-container").css("background-color", "#6F9CEB");
-		}
-		if($(window).scrollTop() >= $('#about-me').offset().top - 120){
-			$("nav .content-container").css("transition", "0.2s");
-			$("nav .content-container").css("background-color", "#FFAD5C");
-		}
-		if($(window).scrollTop() >= $('#recognitions-section').offset().top - 120){
-			$("nav .content-container").css("transition", "0.2s");
-			$("nav .content-container").css("background-color", "#F49097");
-		}
-		if($(window).scrollTop() >= $('#testimonials-section').offset().top - 120){
-			$("nav .content-container").css("transition", "0.2s");
-			$("nav .content-container").css("background-color", "#F5E960");
-		}
+	ScrollReveal().reveal('.left-side-hero', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.right-side-hero', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 200,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.sl-website-project', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.ready-components-project', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 150,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.mediplus-project', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.kasrat-project', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 150,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.ready-components-card', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+
+	ScrollReveal().reveal('.jinal-thakkar', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+	
+	ScrollReveal().reveal('#about-section .body-text', {
+		distance: '40%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+	ScrollReveal().reveal('#contact-section .pre-footer-content', {
+		distance: '40%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250,
+		opacity: 0
 	});
 
     (function(h,o,t,j,a,r){
