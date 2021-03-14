@@ -15,9 +15,20 @@
     .copyrights-footer{
         padding: 20px 100px;
     }
+    .project-image-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
 
 @media(max-width: 1023px) and (min-width: 767px){
+    .project-image-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
     .content-container{
         padding: 20px 50px;
     }
@@ -122,8 +133,6 @@
     }
 
     .testimonial-card .testimonial-image{
-        /* width: 200px;
-        height: 200px; */
         display: none;
     }
 
@@ -178,6 +187,12 @@
 }
 
 @media(max-width: 767px){
+
+    .project-image-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }    
 
     .body-text{
         font-size: 18px;
@@ -358,7 +373,7 @@
     }
 
     #about-section .body-text{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #about-section .btn{
