@@ -75,7 +75,7 @@ a{
 
 /* Image styles */
 .img-responsive{
-	width: 28vw;
+	max-width: 28vw;
 }
 
 /* Navbar */
