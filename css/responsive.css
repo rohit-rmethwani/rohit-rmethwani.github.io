@@ -1,3 +1,10 @@
+@media(min-width: 1281px){
+    /* Image styles */
+    .img-responsive{
+        max-width: 28vw;
+    }
+}
+
 @media(max-width: 1280px) and (min-width: 1024px){
     .content-container{
         padding: 40px 100px;
@@ -382,11 +389,16 @@
 
     .social-links-container{
         margin: 0px;
-        margin-top: 30px;
+        margin: 10px 0px;
+    }
+
+    .social-links-container .social-link{
+        font-size: 20px;
+        margin-right: 10px;
     }
 
     #contact-section .hero-heading{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     #recognitions-section .hero-heading{
