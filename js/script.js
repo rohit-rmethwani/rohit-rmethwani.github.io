@@ -79,6 +79,15 @@ $(function () {
 		easing: 'ease',
 		duration: 1250
 	});
+
+	ScrollReveal().reveal('#blog-section .car-blog-card', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 50,
+		easing: 'ease',
+		duration: 1250
+	});
+
 	ScrollReveal().reveal('#contact-section .pre-footer-content', {
 		distance: '40%',
 		origin: 'bottom',

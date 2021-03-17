@@ -408,3 +408,24 @@ nav .other-nav-links{
 #about-section .btn{
 	margin-top: 40px;
 }
+
+/* Blog section */
+#blog-section .hero-heading{
+	margin-bottom: 40px;
+}
+
+.car-blog-card .project-card-link:hover{
+	color: #F99746;
+}
+
+.car-blog-card{
+	background: #F9DDBF;
+}
+
+.car-blog-card .body-text{
+	max-width: 500px;
+}
+
+.car-blog-card img{
+	max-width: 30vw;
+}
