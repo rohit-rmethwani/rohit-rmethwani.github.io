@@ -97,6 +97,11 @@ $(function () {
 		opacity: 0
 	});
 
+	document.getElementById("close-btn").addEventListener("click", function(){
+		document.getElementById("nudge-section").style.transition = ".2s";
+		document.getElementById("nudge-section").style.display = "none";
+	});
+
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:1955155,hjsv:6};
