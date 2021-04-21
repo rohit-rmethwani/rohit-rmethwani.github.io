@@ -7,6 +7,7 @@
 	--primary-blue: #0C6DFF;
 	--bright-blue: #F5F9FF;
 	--text-color: #001F4D;
+	--nudge-hover-color: #80B2FF;
 }
 html{
 	scroll-behavior: smooth;
@@ -51,24 +52,24 @@ a{
 	background: var(--bright-blue);
 	border-radius: 10px;
 	color: var(--primary-blue);
-	border: solid 3px var(--bright-blue);
+	border: solid 1.5px var(--bright-blue);
 }
 
 .btn-secondary:hover{
 	transition: .2s;
-	border: solid 3px var(--primary-blue);
+	border: solid 1.5px var(--primary-blue);
 }
 
 .btn-primary{
 	background: var(--primary-blue);
 	color: var(--bright-blue);
-	border: solid 3px var(--primary-blue);
+	border: solid 1.5px var(--primary-blue);
 	border-radius: 10px;
 }
 
 .btn-primary:hover{
 	transition: .2s;
-	border: solid 3px var(--primary-blue);
+	border: solid 1.5px var(--primary-blue);
 	background: var(--bright-blue);
 	color: var(--primary-blue);
 }
@@ -426,6 +427,62 @@ nav .other-nav-links{
 	max-width: 500px;
 }
 
+.car-blog-card:last-child{
+	background: #FAFAFA;
+	margin-top: 20px;
+}
+.car-blog-card:last-child .project-card-link:hover{
+	color: var(--primary-blue);
+}
+
 /* .car-blog-card img{
 	max-width: 30vw;
 } */
+
+#nudge-section{
+	transition: .2s;
+}
+
+.nudge-section-container{
+	display: flex;
+	padding: 20px 160px;
+	background: var(--text-color);
+	color: var(--bright-blue);
+	justify-content: space-between;
+}
+
+.nudge-link{
+	text-decoration: none;
+	color: var(--white);
+	transition: .2s;
+}
+.nudge-link:hover{
+	cursor: pointer;
+	color: var(--nudge-hover-color);
+	transition: .2s;
+}
+
+.nudge-link-arrow{
+	transition: .2s;
+}
+
+.nudge-link:hover .nudge-link-arrow{
+	transition: .2s;
+	margin-left: 10px;
+}
+
+.nudge-section-left-side{
+	display: flex;
+	flex-direction: row;
+}
+
+.nudge-section-right-side #close-btn{
+	transition: .2s;
+	margin-left: 30px;
+}
+
+.nudge-section-right-side #close-btn:hover{
+	color: var(--nudge-hover-color);
+	cursor: pointer;
+	transition: .2s;
+}
