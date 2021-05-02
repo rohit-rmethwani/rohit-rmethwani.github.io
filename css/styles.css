@@ -227,6 +227,10 @@ nav .other-nav-links{
 	color: #E85D04;
 }
 
+.kasrat-project-2{
+	visibility: hidden;
+}
+
 .mediplus-project{
 	background: #E5F2FF;
 }
@@ -433,6 +437,14 @@ nav .other-nav-links{
 }
 .car-blog-card:last-child .project-card-link:hover{
 	color: var(--primary-blue);
+}
+
+.quill-project{
+	background-color: #FCE9EB;
+}
+
+.quill-project .project-card-link:hover{
+	color: #D91E36;
 }
 
 /* .car-blog-card img{
