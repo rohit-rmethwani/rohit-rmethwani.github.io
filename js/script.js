@@ -16,6 +16,14 @@ $(function () {
 		duration: 1250
 	});
 
+	ScrollReveal().reveal('.quill-project', {
+		distance: '20%',
+		origin: 'bottom',
+		delay: 0,
+		easing: 'ease',
+		duration: 1250
+	});
+
 	ScrollReveal().reveal('.sl-website-project', {
 		distance: '20%',
 		origin: 'bottom',
