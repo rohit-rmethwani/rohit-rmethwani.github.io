@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -6,15 +6,16 @@
 :root{
 	--primary-blue: #0C6DFF;
 	--bright-blue: #F5F9FF;
-	--text-color: #001F4D;
+	--text-color: #000A1A;
 	--nudge-hover-color: #80B2FF;
+	--primary-grey: #616161;
 }
 html{
 	scroll-behavior: smooth;
 	line-height: 2rem;
 }
 body{
-	font-family: 'Inter', sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 	color: var(--text-color);
 	max-width: 1600px;
 	margin: auto;
@@ -37,7 +38,10 @@ a{
 	font-size: 18px;
 	line-height: 150%;
 }
-
+.small-text{
+	font-size: 16px;
+	font-weight: 400;
+}
 
 /* Button styles */
 .btn{
@@ -86,7 +90,7 @@ nav .left-side-nav{
 }
 
 nav .content-container{
-	background-color: var(--bright-blue);
+	/* background-color: var(--bright-blue); */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -131,12 +135,19 @@ nav .other-nav-links{
 	flex-direction: row;
 }
 
+/*Hero and nav for bg*/
+
+#hero-and-nav-for-bg{
+	background-image: url('../images/hero-bg.jpg');
+}
+
 /* Hero Section */
 
 #hero-section .content-container{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .hero-heading{
@@ -146,23 +157,54 @@ nav .other-nav-links{
 	width: auto;
 }
 
-.left-side-hero{
+#hero-section .hero-heading{
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+#hero-section .body-text{
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	width: 80%;
+	line-height: 140%;
+}
+
+.hero-divider{
+	width: 10%;
+	border: solid 1px var(--primary-blue);
+	margin-bottom: 40px;
+}
+
+.title-container{
+	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	margin-right: 30px;
+	align-items: center;
 }
 
-.right-side-hero{
+.hero-companies .small-text{
+	color: var(--primary-grey);
+	margin-bottom: 20px;
+}
+
+.hero-face{
+	width: 10%;
+}
+
+.hero-companies{
+	text-align: center;
+}
+
+.companies-logos-container{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 }
 
-.hero-button-container{
-	display: flex;
-	flex-direction: row;
-	margin-top: 40px;
+.company-logo{
+	width: 15%;
 }
 
 /* Work Section */
