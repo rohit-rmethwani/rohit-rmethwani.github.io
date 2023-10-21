@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -250,11 +250,11 @@ nav .other-nav-links{
 }
 
 .sl-website-project{
-	background: #EBF7FE;
+	background-image: url('../images/sl-bg.jpg');
 }
 
 .ready-components-project{
-	background: #EEEEF7;
+	background-image: url('../images/ready-bg.jpg');
 }
 
 .ready-components-project .project-card-link:hover{
@@ -262,7 +262,7 @@ nav .other-nav-links{
 }
 
 .kasrat-project{
-	background: #FFF0E5;
+	background-image: url('../images/kasrat-bg.jpg');
 }
 
 .kasrat-project .project-card-link:hover{
@@ -274,7 +274,7 @@ nav .other-nav-links{
 }
 
 .mediplus-project{
-	background: #E5F2FF;
+	background-image: url('../images/medi-bg.jpg');
 }
 
 .mediplus-project .project-card-link:hover{
@@ -294,6 +294,7 @@ nav .other-nav-links{
 
 #arrow-icon{
 	display: inline-block;
+	font-family: 'Inter';
 }
 
 #arrow-icon{
@@ -323,26 +324,28 @@ nav .other-nav-links{
 
 .recognition-card{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 	border-radius: 10px;
 }
 .ready-components-card{
-	background: #FDD1E2;
+	background-image: url('../images/recog-bg.jpg');
 }
 .recognition-card-left-side{
 	padding: 30px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .recognition-card-right-side img{
 	width: 100%;
+	border-radius: 10px;
 }
 .recognition-card .project-card-link:hover{
 	color: #E81778;
 }
 
-.recognition-card .project-card-heading{
-	max-width: 700px;
-}
 
 /* Testimoinals section */
 #testimonials-section .hero-heading{
@@ -482,7 +485,7 @@ nav .other-nav-links{
 }
 
 .quill-project{
-	background-color: #FCE9EB;
+	background-image: url('../images/quil-bg.jpg');
 }
 
 .quill-project .project-card-link:hover{
