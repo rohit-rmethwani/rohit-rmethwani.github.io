@@ -195,11 +195,54 @@
 
 @media(max-width: 767px){
 
+    .twitter-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .twitter-container .tweet{
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .twitter-container:last-child{
+        display: none;
+    }
+
+    .hero-face{
+        width: 30%;
+    }
+
+    #hero-section .body-text{
+        width: 100%;
+    }
+
+    .hero-companies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-companies .small-text{
+        width: 60%;
+    }
+
+    .company-logo{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
     .project-image-container{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
     }    
+
+    .kasrat-project-2{
+        display: none;
+    }
 
     .body-text{
         font-size: 18px;
