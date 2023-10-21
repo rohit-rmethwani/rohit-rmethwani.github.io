@@ -358,7 +358,7 @@ nav .other-nav-links{
 	flex-direction: row;
 	justify-content: flex-start;
 	border-radius: 10px;
-	background: var(--bright-blue);
+	background-image: url('../images/grey-bg.jpg');
 	margin-bottom: 20px;
 }
 
@@ -462,6 +462,26 @@ nav .other-nav-links{
 /* Blog section */
 #blog-section .hero-heading{
 	margin-bottom: 40px;
+}
+
+.twitter-cta{
+	text-align: center;
+}
+
+.twitter-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.twitter-container:last-child{
+	margin-bottom: 20px;
+}
+
+.twitter-container .tweet{
+	margin-right: 20px;
+	width: 40%;
 }
 
 .car-blog-card .project-card-link:hover{
