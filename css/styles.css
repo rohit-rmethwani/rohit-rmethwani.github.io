@@ -249,6 +249,23 @@ nav .other-nav-links{
 	margin-bottom: 8px;
 }
 
+.sqf-project{
+	background-image: url('../images/sq-bg.png');
+}
+
+.sqf-project .project-card-link:hover{
+	color: #f26649;
+}
+
+.real-project{
+	background-image: url('../images/real-bg.png');
+}
+
+.real-project .project-card-link:hover{
+	color: #C99700;
+}
+
+
 .sl-website-project{
 	background-image: url('../images/sl-bg.jpg');
 }
