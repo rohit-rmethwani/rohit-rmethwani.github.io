@@ -1,398 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--*******************META TAGS**********************-->
-        <meta charset="utf-8">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Methwani — Product Designer</title>
+<meta name="description" content="Rohit Methwani — Product Designer with 4+ years shipping enterprise and consumer products, from Figma to production React.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F6F3;
+    --ink: #14171A;
+    --muted: #6B7280;
+    --line: #DADDDE;
+    --blue: #0D99FF;
+    --red: #F24822;
+    --panel: #14171A;
+    --panel-tx: #F5F6F3;
+    --rail: 760px;
+  }
 
-        <meta name="description" content="Rohit Methwani - A hardworking Computer Engineering student with experience of developing things with Programming Concepts,designing UI/UX,front end development and other things.">
+  * { box-sizing: border-box; }
 
-        <meta name="author" content="Rohit Methwani">
+  html { scroll-behavior: smooth; }
 
-        <meta name="keywords" content="HTML5,CSS3,jQuery,Responsive Website,Resume, UI/UX, Portfolio, Designer, Developer">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
 
-        <meta name="viewport" content="width=device-width initial-scale=1">
+  a { color: inherit; }
 
-<!--*********************META TAGS***********-->
-        <title>Rohit Methwani | Product Designer</title>
-        <!--Animation-->
-        
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/responsive.css">
+  ::selection { background: var(--blue); color: #fff; }
 
-        <!--Favicon-->
-        <link rel="shortcut icon" href="images/fav.ico">
-        <link rel="icon" type="image/x-icon" href="images/fav.ico">
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 
+  .rail {
+    max-width: var(--rail);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
 
-        <!-- Hotjar Tracking Code for rohitmethwani.xyz -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:1955155,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
 
-    </head>
-    <body>
-   
-        <!--
-        <section id="nudge-section">
-            <div class="nudge-section-container">
-                <div class="nudge-section-left-side">
-                    <a href="https://rohitmethwani.medium.com/things-i-did-to-improve-my-designs-before-vs-after-855f3baa4fa0" target="__tab" class="nudge-link body-text">I have written a blog on my old vs new designs. Checkout <span class="nudge-link-arrow">-></span></a>
-                </div>
-                <div class="nudge-section-right-side">
-                    <p class="body-text" id="close-btn"><i class="fa fa-times"></i></p>
-                </div>
-            </div>
-        </section>
-        -->
-        <section id="hero-and-nav-for-bg">
-            <nav class="navbar navbar-expand-lg nav-light">
-                <div class="content-container">
-                    <div class="left-side-nav">
-                        <a href="#"><img src="./images/Logo.png" width="80%" alt="Logo"></a>
-                    </div>
-                    <div class="right-side-nav">
-                        <ul class="navbar-nav navigation-links-container">
-                            <div class="other-nav-links">
-                                <li class="nav-item">
-                                    <a href="./files/Resume_Rohit_Methwani(Product Designer).pdf" target="_tab" class="nav-link">Resume</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#work-section">Work</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact-section">Contact</a>
-                                </li>
-                            </div>
-                            <li class="nav-item">
-                                <a class="nav-link menu-icon"><i class="fa fa-bars"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  /* ---------- NAV ---------- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(245, 246, 243, 0.86);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .rail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+  .nav-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+  .nav-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    transition: color .15s ease;
+  }
+  .nav-links a:hover { color: var(--blue); }
+
+  /* ---------- HERO ---------- */
+  header.hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 7px; height: 7px;
+    background: var(--blue);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* inspect-frame signature */
+  .inspect-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 6px 2px;
+  }
+  .inspect-wrap .frame-edge {
+    position: absolute;
+    border: 1.5px solid var(--blue);
+    inset: -14px -16px;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  .inspect-wrap.show .frame-edge { opacity: 1; transform: scale(1); }
+  .handle {
+    position: absolute;
+    width: 7px; height: 7px;
+    background: var(--paper);
+    border: 1.5px solid var(--blue);
+  }
+  .handle.tl { top: -14px; left: -16px; }
+  .handle.tr { top: -14px; right: -16px; }
+  .handle.bl { bottom: -14px; left: -16px; }
+  .handle.br { bottom: -14px; right: -16px; }
+
+  .dim-tick {
+    position: absolute;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--blue);
+    opacity: 0;
+    transition: opacity .5s ease .15s;
+    white-space: nowrap;
+  }
+  .inspect-wrap.show .dim-tick { opacity: 1; }
+  .dim-w { top: -34px; left: 50%; transform: translateX(-50%); }
+  .dim-h { top: 50%; right: -58px; transform: translateY(-50%) rotate(90deg); }
+
+  h1.name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 8vw, 68px);
+    line-height: 1.03;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .role-line {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 3vw, 22px);
+    color: var(--blue);
+    margin: 18px 0 0;
+  }
+
+  .subhead {
+    max-width: 540px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 36px;
+  }
+  .btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 3px;
+    border: 1.5px solid var(--ink);
+    transition: background .15s ease, color .15s ease, transform .15s ease;
+  }
+  .btn.primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn.primary:hover { background: var(--blue); border-color: var(--blue); transform: translateY(-1px); }
+  .btn.ghost:hover { background: var(--ink); color: var(--paper); transform: translateY(-1px); }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section { padding: 72px 0; border-top: 1px solid var(--line); }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .section-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--red);
+  }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ---------- WORK CARDS ---------- */
+  .card {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px 26px;
+    margin-bottom: 22px;
+    background: #fff;
+    transition: border-color .2s ease;
+  }
+  .card:hover { border-color: var(--blue); }
+  .card .handle { opacity: 0; transition: opacity .2s ease; }
+  .card:hover .handle { opacity: 1; }
+  .card .handle.tl { top: -5px; left: -5px; }
+  .card .handle.tr { top: -5px; right: -5px; }
+  .card .handle.bl { bottom: -5px; left: -5px; }
+  .card .handle.br { bottom: -5px; right: -5px; }
+
+  .card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--paper);
+    margin-bottom: 18px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .card-image.placeholder {
+    border-style: dashed;
+  }
+  .card-image .placeholder-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+    text-align: center;
+    padding: 0 20px;
+  }
+  .card-image .placeholder-label .fname {
+    display: block;
+    margin-top: 4px;
+    color: var(--blue);
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+  .card-role {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+  }
+  .card-dates {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .card-context {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 16px;
+  }
+  .card-desc { font-size: 15px; margin: 0 0 18px; }
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .metric {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    padding: 6px 10px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+  }
+  .metric::before {
+    content: "";
+    width: 5px; height: 5px;
+    background: var(--red);
+  }
+  .metric b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- SKILLS ---------- */
+  .skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .skill-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .chip {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about p { font-size: 16px; margin: 0 0 16px; }
+  .about .personal { color: var(--muted); font-size: 15px; }
+
+  /* ---------- LOGO STRIP ---------- */
+  .logo-strip { padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .logo-row { display: flex; flex-wrap: wrap; gap: 14px; }
+  .logo-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 150px;
+    border: 1px dashed var(--line);
+    border-radius: 4px;
+    background: #fff;
+  }
+  .logo-slot .placeholder-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    padding: 0 10px;
+  }
+  .logo-slot .placeholder-label .fname { display: block; color: var(--blue); margin-top: 2px; }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonial-card {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 24px 26px;
+    margin-bottom: 18px;
+    background: #fff;
+  }
+  .testimonial-quote {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 16px;
+    color: var(--ink);
+  }
+  .testimonial-quote.placeholder { color: var(--muted); font-style: italic; }
+  .testimonial-attribution {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .testimonial-avatar {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px dashed var(--line);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+  .testimonial-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; }
+  .testimonial-role { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted); }
+
+  footer {
+    background: var(--panel);
+    color: var(--panel-tx);
+    padding: 72px 0 40px;
+    border-top: none;
+  }
+  footer .eyebrow { color: #8B93A1; }
+  footer .eyebrow::before { background: var(--blue); }
+  .footer-email {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(24px, 5vw, 36px);
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0 32px;
+    border-bottom: 2px solid var(--blue);
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    list-style: none;
+    padding: 0; margin: 0 0 40px;
+  }
+  .footer-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--panel-tx);
+    border-bottom: 1px solid #3A3F45;
+    padding-bottom: 2px;
+    transition: border-color .15s ease, color .15s ease;
+  }
+  .footer-links a:hover { color: var(--blue); border-color: var(--blue); }
+  .footer-note {
+    font-size: 13px;
+    color: #6B7280;
+  }
+
+  @media (max-width: 640px) {
+    header.hero { padding-top: 40px; padding-bottom: 48px; }
+    section { padding: 56px 0; }
+    .inspect-wrap .frame-edge { inset: -10px -12px; }
+    .dim-h { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; }
+    .inspect-wrap .frame-edge, .inspect-wrap .dim-tick { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="rail">
+    <a href="#top" class="nav-name">Rohit Methwani</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills-list">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero rail" id="top">
+  <div class="eyebrow mono">PRODUCT DESIGNER — MUMBAI, INDIA</div>
+
+  <div class="inspect-wrap" id="inspectFrame">
+    <span class="frame-edge"></span>
+    <span class="handle tl"></span>
+    <span class="handle tr"></span>
+    <span class="handle bl"></span>
+    <span class="handle br"></span>
+    <h1 class="name">Mostly designer.<br>Enough engineer<br>to ship it myself.</h1>
+
+  </div>
+
+  <p class="role-line">Product Designer &amp; Front-End Developer</p>
+  <p class="subhead">4+ years in — though I actually started in code: a diploma in computer engineering, way too many languages, two years of freelance Java work in college. Then I found design, and it pulled harder than anything code had. I chose it as my craft — I just never quite let go of the code either.</p>
+
+  <div class="cta-row">
+    <a class="btn primary" href="#work">View selected work</a>
+    <a class="btn ghost" href="./files/Resume_Rohit_Methwani(Product Designer).pdf" target="_blank" rel="noopener">Resume ↗</a>
     
-            <section id="hero-section">
-                <div class="content-container">
-                    <div class="title-container">
-                        <img src="./images/hero-face.png" class="hero-face">
-                        <h1 class="hero-heading">
-                            Hello, I am Rohit Methwani
-                        </h1>
-                        <p class="body-text">Hustling towards creating meaningful and impactful digital experiences by combining thoughtful product design with hands-on front-end development, since <span class="text-blue">4+ years</span> now</p>
-                        <a href="#work-section" class="btn btn-primary hero-work">Explore my work</a>
-                    </div>
-                    <hr class="hero-divider">
-                    <div class="hero-companies">
-                        <h1 class="small-text">Companies I've worked or collaborated with</h1>
-                        <div class="company-logos-container">
-                            <img src="./images/logo-1.png" alt="" class="company-logo">
-                            <img src="./images/logo-2.png" alt="" class="company-logo">
-                            <img src="./images/logo-3.png" alt="" class="company-logo">
-                            <img src="./images/logo-4.png" alt="" class="company-logo">
-                            <img src="./images/logo-5.png" alt="" class="company-logo">
-                            <img src="./images/logo-6.png" alt="" class="company-logo">
-                            <!--<img src="./images/logo-7.png" alt="" class="company-logo">-->
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
+  </div>
+</header>
+
+
+<section id="work">
+  <div class="rail">
+    <div class="section-head reveal">
+      <span class="section-num mono">01</span>
+      <h2 class="section-title">Selected work</h2>
+    </div>
+
+    <div class="card reveal">
+      <span class="handle tl"></span><span class="handle tr"></span><span class="handle bl"></span><span class="handle br"></span>
+      <div class="card-top">
+        <span class="card-role">Prismforce.ai</span>
+        <span class="card-dates mono">Apr 2025 — Current</span>
+      </div>
+      <div class="card-image placeholder">
+        <img src="./images/prismforce.jpg" alt="">
+      </div>
+      <p class="card-context">AI-powered SaaS platform for the tech-services talent supply chain, serving 110,000+ users across 12+ enterprise giants.</p>
+      <p class="card-desc">I own end-to-end product design across Prismforce's reporting and workflow tools — from the core report builder to RMS demand management and a rules engine for skills endorsement — working alongside another product designer as the team's grown. I also led a ground-up refresh of Prismforce's design system — the first in a long time — rebuilding it into a scalable, atomic component library; that's complete now and in maintenance mode, and I've since started building some of its components directly in Angular.</p>
+      <div class="metrics">
+        <span class="metric"><b>17,000+</b>&nbsp;reports / week</span>
+        <span class="metric"><b>60%</b>&nbsp;faster task completion</span>
+        <span class="metric"><b>~30%</b>&nbsp;lower operational overhead</span>
+      </div>
+      <a href="./prismforce-case-study.html" style="display:inline-block; margin-top:16px; font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--blue); text-decoration:none; border-bottom:1px solid var(--blue); padding-bottom:2px;">Read full case study →</a>
+    </div>
+
+    <div class="card reveal">
+      <span class="handle tl"></span><span class="handle tr"></span><span class="handle bl"></span><span class="handle br"></span>
+      <div class="card-top">
+        <span class="card-role">Miko.ai</span>
+        <span class="card-dates mono">Oct 2021 — Apr 2025</span>
+      </div>
+      <div class="card-image placeholder">
+        <img src="./images/Miko.jpg" alt="">
+      </div>
+      <p class="card-context">AI-powered smart robot for children ages 3–8 — spanning Square Off's acquisition by Miko, from electronic chessboards to a full robotics product line.</p>
+      <p class="card-desc">Redesigned Miko Chess for kids much younger than the original was built for, rebuilt the whole first-time experience for parents, and somewhere in there ended up leading how our design system evolved across two very different products. Turns out chessboards and robots aren't as different as you'd think, design-wise.</p>
+      <div class="metrics">
+        <span class="metric"><b>+40%</b>&nbsp;chess usage</span>
+        <span class="metric"><b>+25%</b>&nbsp;week-one engagement</span>
+        <span class="metric"><b>+35%</b>&nbsp;design-to-dev efficiency</span>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <span class="handle tl"></span><span class="handle tr"></span><span class="handle bl"></span><span class="handle br"></span>
+      <div class="card-top">
+        <span class="card-role">Square Off</span>
+        <span class="card-dates mono">Oct 2021 — Oct 2023</span>
+      </div>
+      <div class="card-image placeholder">
+        <img src="./images/Squareoff.jpg" alt="">
+      </div>
+      <p class="card-context">Smart, automatic electronic chessboards enabling remote play with physical move execution.</p>
+      <p class="card-desc">Designed the subscription model, reworked onboarding, and then — because I couldn't help myself — built the HTML/CSS/JS prototypes too, just to see the flows actually working before engineering got to them. First real taste of building what I designed, and I was hooked.</p>
+      <div class="metrics">
+        <span class="metric"><b>+10%</b>&nbsp;revenue</span>
+        <span class="metric"><b>-30%</b>&nbsp;onboarding drop-off</span>
+        <span class="metric"><b>3.9→4.3</b>&nbsp;App Store rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="rail">
+    <div class="section-head reveal">
+      <span class="section-num mono">02</span>
+      <h2 class="section-title">Front-end projects</h2>
+    </div>
+    <p class="reveal" style="color:var(--muted); font-size:14px; margin-top:-16px; margin-bottom:32px;">Even after I chose design as my craft, I kept shipping code on the side — mostly to stay sharp, partly because I never really wanted to stop.</p>
+
+    <div class="card reveal">
+      <span class="handle tl"></span><span class="handle tr"></span><span class="handle bl"></span><span class="handle br"></span>
+      <div class="card-top">
+        <span class="card-role">Movies Listing App</span>
+        <span class="card-dates mono">Personal project</span>
+      </div>
+      
+      <p class="card-context">A responsive movie-discovery app built from scratch to prove out core React patterns beyond design tooling.</p>
+      <div class="skill-row" style="margin-bottom:16px;">
+        <span class="chip">React</span>
+        <span class="chip">Tailwind CSS</span>
+        <span class="chip">TMDB API</span>
+        <span class="chip">React Hooks</span>
+      </div>
+      <p class="card-desc">Built this mostly to prove to myself I could actually ship a full React app, not just talk about React in interviews. It consumes the TMDB API, with debounced search so it's not re-fetching on every keystroke, a "Load More" pattern instead of pulling in a heavier infinite-scroll library, and loading/error/empty states handled with plain React state — no external library needed. I held it to the same craft standard I'd hold a Figma file to: clean component structure, proper keyboard navigation, and no rough edges.</p>
+      <div class="metrics">
+        <span class="metric">Debounced search</span>
+        <span class="metric">Paginated results</span>
+        <span class="metric">Accessible by default</span>
+      </div>
+      <div style="display:flex; gap:16px; margin-top:16px;">
+        <a href="#" style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--blue); text-decoration:none; border-bottom:1px solid var(--blue); padding-bottom:2px;">Live demo →</a>
+        <a href="#" style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--blue); text-decoration:none; border-bottom:1px solid var(--blue); padding-bottom:2px;">View code →</a>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <span class="handle tl"></span><span class="handle tr"></span><span class="handle bl"></span><span class="handle br"></span>
+      <div class="card-top">
+        <span class="card-role">Ready Components</span>
+        <span class="card-dates mono">Recognized by Adobe, 2019</span>
+      </div>
+      <p class="card-context">A Figma plugin bridging design and engineering workflows — built with TypeScript against the Figma and XD plugin APIs.</p>
+      <div class="skill-row" style="margin-bottom:16px;">
+        <span class="chip">TypeScript</span>
+        <span class="chip">Figma Plugin API</span>
+        <span class="chip">Adobe XD API</span>
+      </div>
+      <p class="card-desc">Built this because I was tired of the copy-paste dance every time I needed a common component in a new file. It's a plugin that inserts ready-to-use UI components with one click, straight from Figma or XD. Adobe ended up featuring it as one of their top curated plugins, which was a nice surprise for something I built to solve my own annoyance.</p>
+      <div style="display:flex; gap:16px; margin-top:16px;">
+        <a href="#" style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--blue); text-decoration:none; border-bottom:1px solid var(--blue); padding-bottom:2px;">View plugin →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills-list">
+  <div class="rail">
+    <div class="section-head reveal">
+      <span class="section-num mono">03</span>
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <div class="reveal">
+      <div class="skill-row">
+        <span class="skill-label">PRODUCT &amp; UX DESIGN</span>
+        <span class="chip">User Research</span>
+        <span class="chip">Usability Testing</span>
+        <span class="chip">Interaction Design</span>
+        <span class="chip">Design Systems</span>
+        <span class="chip">Design Tokens</span>
+        <span class="chip">Prototyping</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">FRONT-END DEVELOPMENT</span>
+        <span class="chip">React</span>
+        <span class="chip">Angular</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">HTML/CSS</span>
+        <span class="chip">Tailwind CSS</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">TOOLS</span>
+        <span class="chip">Figma</span>
+        <span class="chip">Figma API</span>
+        <span class="chip">Adobe XD</span>
+        <span class="chip">Component Libraries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="rail">
+    <div class="section-head reveal">
+      <span class="section-num mono">04</span>
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="reveal">
+      <p>My path here runs backwards from most designers. I started with a diploma in computer engineering, picking up C, C++, Java, Python, PHP, Laravel, JavaScript, React, React Native, and Angular along the way. Java's collections framework is what really pulled me in — I spent close to two years in college building freelance projects around it, deep in the kind of programming most designers never touch.</p>
+      <p>Somewhere in exploring front-end development, I discovered design — and it pulled harder than code ever had. I chose it as my full-time craft, graduated in 2021, and started with an internship at a design studio. From there: two years at Square Off, a year and a half at Miko after Square Off was acquired, and now Prismforce, where I currently lead design-system strategy.</p>
+      <p>What never went away was the engineering. Through all of it, I kept building front-end side projects — partly to stay sharp, mostly because I genuinely like doing it. That's probably why design systems fit me so well as a discipline: it's the one place design and code actually have to agree with each other.</p>
+      <p class="personal">Outside of all that — I'm slowly restoring an old car (badly), I sing when I'm fairly sure nobody's listening closely, and I will talk your ear off about design systems if you let me.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer id="contact">
+  <div class="rail">
+    <div class="eyebrow mono">GET IN TOUCH</div>
     
-        <section id="work-section">
-            <div class="content-container">
-                <h1 class="hero-heading">
-                    Work
-                </h1>
-                <div class="card-container-outside">
-                    <div class="card-container-row-one">
-                        <div class="project-card sqf-project">
-                            <h1 class="project-card-heading">Experience as a Product Designer at Square Off</h1>
-                            <p class="body-text">Crafted playing experience for world's first A.I. enabled automated chessboard.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://www.loom.com/share/4174e3027cdd4ea49c705bd7ed97d9be?sid=819d82eb-e097-4d00-b2d6-4bd2a75123a7" target="__tab" class="project-card-link">Check video (3 mins) <div id="arrow-icon">-></div></a>
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image-6.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                        <div class="project-card real-project">
-                            <h1 class="project-card-heading">Solution to prevent unsolicited calls</h1>
-                            <p class="body-text">Checkout my take on preventing such calls from real estate brokers through designs</p>
-                            <div class="project-card-link-container">
-                                <a href="https://rohitmethwani.medium.com/how-can-we-prevent-people-from-not-getting-unsolicited-calls-from-real-estate-brokers-and-builders-797d2462cd9c" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                    
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image-5.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                        
-                    </div> 
-                    <div class="card-container-row-one">
-                        <div class="project-card sl-website-project">
-                            <h1 class="project-card-heading">Study Link classes - Website redesign</h1>
-                            <p class="body-text">Redesigned the website for better conversion rate & showcase the value proposition in an effective way.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://uxplanet.org/redesigning-a-classes-website-for-a-better-conversion-rate-reach-ui-ux-case-study-7ab5f8f4d831" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                                <a href="https://studylinkclasses.com/" target="__tab" class="project-card-link">Visit website <div id="arrow-icon">-></div></a>
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                        <div class="project-card quill-project">
-                            <h1 class="project-card-heading">Quill - The Padhai app</h1>
-                            <p class="body-text">Reimagined the learning experience for school and college students with the new app and web platform.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://rohitmethwani.medium.com/quill-the-padhai-app-design-case-study-925a9f77e9ed" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                    
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/quill.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- <div class="card-container-row-one">
-                        <div class="project-card ready-components-project">
-                            <h1 class="project-card-heading">Ready Components - Adobe XD, Figma plugin</h1>
-                            <p class="body-text">The plugin provides ready-made generally used UI components.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://rohitmethwani.medium.com/ready-components-an-adobe-xd-plugin-for-readymade-components-5286f52bf28b" target="__tab" class="project-card-link">Visit blog <div id="arrow-icon">-></div></a>
-                                <a href="https://rohitmethwani.xyz/readycomponents-website" target="__tab" class="project-card-link">Visit website <div id="arrow-icon">-></div></a>
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image-3.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                        <div class="project-card mediplus-project">
-                            <h1 class="project-card-heading">Mediplus Appointment - App concept design</h1>
-                            <p class="body-text">It is an online appointment booking platform & prescription storing app solution.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://bootcamp.uxdesign.cc/mediplus-doctors-appointment-booking-app-ui-ux-case-study-5ecf06fd13ca" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image-4.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-container-row-one">
-                        <div class="project-card kasrat-project">
-                            <h1 class="project-card-heading">Kasrat Fitness App - App concept design</h1>
-                            <p class="body-text">Aims to help people in doing the workouts for all levels of experience in fitness.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://uxplanet.org/kasrat-gym-app-case-study-35d4f8813e27" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image-2.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                        <div class="project-card kasrat-project-2">
-                            <h1 class="project-card-heading">Kasrat Fitness App - App concept design</h1>
-                            <p class="body-text">Aims to help people in doing the workouts for all levels of experience in fitness.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://uxplanet.org/kasrat-gym-app-case-study-35d4f8813e27" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                            </div>
-                            <div class="project-image-container">
-                                <img src="./images/project-image-2.png" class="project-image" alt="">
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
+    <ul class="footer-links">
+      <li><a href="./files/Resume_Rohit_Methwani(Product Designer).pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+      <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><a href="https://behance.net" target="_blank" rel="noopener">Behance ↗</a></li>
+      <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble ↗</a></li>
+    </ul>
+    <p class="footer-note">Mumbai, India — usually replies within a day, faster if it's about design systems or cars.</p>
+  </div>
+</footer>
 
-        <section id="recognitions-section">
-            <div class="content-container">
-                <h1 class="hero-heading">Recognitions</h1>
-                    <div class="recognition-card ready-components-card">
-                        <div class="recognition-card-left-side">
-                            <h1 class="project-card-heading">Recognised by Adobe as best plugin to jumpstart design, in November 2019</h1>
-                            <div class="project-card-link-container">
-                                <a href="https://blog.adobe.com/en/publish/2019/10/30/adobe-xd-plugins-jumpstart-your-designs#ready-mobile-components-for-adobe-xd-by-rohit-methwani" target="__tab" class="project-card-link">Check blog <div id="arrow-icon">-></div></a>
-                                <a href="https://rohitmethwani.xyz/readycomponents-website/" target="__tab" class="project-card-link">View Plugin <div id="arrow-icon">-></div></a>
-                            </div>
-                        </div>
-                        <div class="recognition-card-right-side">
-                            <img src="./images/adobe-xd-plugins.jpg" class="project-image" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<script>
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
 
-        <section id="testimonials-section">
-            <div class="content-container">
-                <h1 class="hero-heading">Recommendations</h1>
-                    <div class="testimonial-card jinal-thakkar">
-                        <div class="testimonial-card-left-side">
-                            <img src="./images/jinal-thakkar.png" class="testimonial-image" alt="">
-                        </div>
-                        <div class="testimonial-card-right-side">
-                            <div class="testimonial-card-upper">
-                                <div class="testimonial-card-upper-left-side">
-                                    <img src="./images/jinal-thakkar.png" class="testimonial-image-small" alt="">
-                                </div>
-                                <div class="testimonial-card-upper-right-side">
-                                    <h1 class="project-card-heading">Jinal Shah Thakkar</h1>
-                                    <p class="designation">Co-founder, Study Link Classes</p>
-                                </div>
-                            </div>
-                            <p class="body-text">We are very happy with our new website! It looks professional and very easy to navigate. Our experience with Rohit has been great. He handles things very efficiently and is available for any questions we have. He listened to our needs, offered relevant options, and was prompt to respond to all of my questions. I will be pursuing future projects with him and highly recommend him to anyone in the market for a professional website.</p>
-                            <div class="project-card-link-container">
-                                <a href="https://uxplanet.org/redesigning-a-classes-website-for-a-better-conversion-rate-reach-ui-ux-case-study-7ab5f8f4d831" target="__tab" class="project-card-link">View project <div id="arrow-icon">-></div></a>
-                                <a href="https://studylinkclasses.com/" target="__tab" class="project-card-link">Visit website <div id="arrow-icon">-></div></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card hardik-somaiya">
-                        <div class="testimonial-card-left-side">
-                            <img src="./images/jinal-thakkar.png" class="testimonial-image" alt="">
-                        </div>
-                        <div class="testimonial-card-right-side">
-                            <div class="testimonial-card-upper">
-                                <div class="testimonial-card-upper-left-side">
-                                    <img src="./images/hardik.jpg" class="testimonial-image-small"alt="">
-                                </div>
-                                <div class="testimonial-card-upper-right-side">
-                                    <h1 class="project-card-heading">Hardik Somaiya</h1>
-                                    <p class="designation">Technical Head, Target Publications</p>
-                                </div>
-                            </div>
-                            <p class="body-text">When it comes UI & UX, Rohit is a very critical thinker about the business challenges and how can it be solved by design. Loved working with him on a mobile app e-learning project. Would love to keep collaborating with him in the future as well.</p>
-                            <div class="project-card-link-container">
-                                <!-- <a href="" class="project-card-link">Visit blog <div id="arrow-icon">-></div></a>
-                                <a href="" class="project-card-link">Visit website <div id="arrow-icon">-></div></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  // Hero inspect-frame reveal shortly after load
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.getElementById('inspectFrame').classList.add('show');
+    }, 250);
+  });
+</script>
 
-        
-        <section id="blog-section">
-            <div class="content-container">
-                <h1 class="hero-heading">My design thoughts</h1>
-                <!-- <div class="recognition-card car-blog-card">
-                    <div class="recognition-card-left-side">
-                        <h1 class="project-card-heading">Why do companies ignore this? Usability flaws in Indian Cars.</h1>
-                        <p class="body-text">
-                            As a car enthusiast & a Product Designer, I would like to highlight some problems which I personally felt must be addressed & these issues lead to lower ...
-                        </p>
-                        <div class="project-card-link-container">
-                            <a href="https://rohitmethwani.medium.com/why-do-companies-ignore-this-usability-flaws-in-indian-cars-d64626be51fa" target="__tab" class="project-card-link">View blog <div id="arrow-icon">-></div></a>
-                        </div>
-                    </div>
-                    <div class="recognition-card-right-side">
-                        <img src="./images/car-blog.png" class="project-image" alt="">
-                    </div>
-                </div>
-                <div class="recognition-card car-blog-card">
-                    <div class="recognition-card-left-side">
-                        <h1 class="project-card-heading">Things I did to improve my designs — Before vs After</h1>
-                        <p class="body-text">
-                            I’ll share my journey from a “Designer” to a “Product Designer” in 2 years (while in college). These things really shaped me as a better designer.
-                        </p>
-                        <div class="project-card-link-container">
-                            <a href="https://rohitmethwani.medium.com/things-i-did-to-improve-my-designs-before-vs-after-855f3baa4fa0" target="__tab" class="project-card-link">View blog <div id="arrow-icon">-></div></a>
-                        </div>
-                    </div>
-                    <div class="recognition-card-right-side">
-                        <img src="./images/before-after.png" class="project-image" alt="">
-                    </div>
-                </div> -->
-
-                <div class="twitter-container">
-                    
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I love how Apple in their presentation takes their products to the next level. They present products larger than life.<br><br>Meanwhile in reality:<br>120Hz, what&#39;s that? Type C: New innovation! Battery life: 😂😂. Fast charging: meh😶<br><br>Top-notch marketing. Missing basic features!</p>&mdash; Rohit - Exploring UX everyday 🚀 (@RohitMethwanii) <a href="https://twitter.com/RohitMethwanii/status/1701851469333356865?ref_src=twsrc%5Etfw">September 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    </div>
-
-                    <div class="tweet">
-
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“Create Experiences not product” ✨✨<br><br>Last week I was in goa with my friends. I carried my <a href="https://twitter.com/saregamaglobal?ref_src=twsrc%5Etfw">@saregamaglobal</a> Carvaan Mini speaker with me. And boy oh boy, it was highlight of the trip. I’ll tell you how.<br><br>👇🏻</p>&mdash; Rohit - Exploring UX everyday 🚀 (@RohitMethwanii) <a href="https://twitter.com/RohitMethwanii/status/1634246597012758530?ref_src=twsrc%5Etfw">March 10, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-                    </div>
-
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I think fundamental core thought alignment is the most important thing for me when I start a new thing. Be it joining a new company or working with some individual. That really shapes me as a designer and a person. <br><br>Does that make me a stubborn individual/professional?</p>&mdash; Rohit - Exploring UX everyday 🚀 (@RohitMethwanii) <a href="https://twitter.com/RohitMethwanii/status/1714879495298003341?ref_src=twsrc%5Etfw">October 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
-                    </div>
-
-                </div>
-
-                <div class="twitter-container">
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Unpopular opinion, <a href="https://twitter.com/Android?ref_src=twsrc%5Etfw">@Android</a>’s latest version has better aesthetic appeal as compared to iOS.<br><br>Yours truly,<br>iPhone user, planning to switch back to android.</p>&mdash; Rohit - Exploring UX everyday 🚀 (@RohitMethwanii) <a href="https://twitter.com/RohitMethwanii/status/1694631209161142672?ref_src=twsrc%5Etfw">August 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-
-                    <div class="tweet">    
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">MOST IMPORTANT ❗️❗️ <a href="https://t.co/jZTfh1oOjH">https://t.co/jZTfh1oOjH</a></p>&mdash; Rohit - Exploring UX everyday 🚀 (@RohitMethwanii) <a href="https://twitter.com/RohitMethwanii/status/1708074710578376932?ref_src=twsrc%5Etfw">September 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    </div>
-
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I was 🤌🏻 close to crash into another car while driving on a highway, thanks to a usability flaw in the car 🤐😵‍💫 <br><br>1/6</p>&mdash; Rohit - Exploring UX everyday 🚀 (@RohitMethwanii) <a href="https://twitter.com/RohitMethwanii/status/1627019043218792448?ref_src=twsrc%5Etfw">February 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    </div>
-
-                </div>
-
-                <div class="twitter-cta">
-                    <a href="https://twitter.com/RohitMethwanii" class="btn btn-primary" target="_tab">Follow me on X</a>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="about-section">
-            <div class="content-container">
-                <h1 class="hero-heading">
-                    About me
-                </h1>
-                <p class="body-text">
-                    Namaste, I am Rohit Methwani, from a small town Ulhasnagar, near <strong class="text-blue">Mumbai, India 🇮🇳</strong>. I am a <strong class="text-blue"> self-taught Product Designer </strong>. I love solving problems & creating meaningful experiences for those through design. 
-                </p>
-                <br>
-                <p class="body-text">
-                    Apart from this, I am a huge <strong class="text-blue">car-enthusiat</strong> & a motorsport addict. I like <strong class="text-blue">long drives in a beast</strong> with sunroof open & <strong class="text-blue">soothing music on the speakers</strong>. <strong class="text-blue">Teaching</strong> is another thing <strong class="text-blue"> I strive </strong> for. I love to teach & I had a <strong class="text-blue">dream</strong> to have my <strong class="text-blue">own coaching </strong>center! Along with this, I am very much <strong class="text-blue">keen</strong> about <strong class="text-blue">music</strong>. Though I haven’t attended any singing classes but I have been <strong class="text-blue">singing since 6 years now</strong> and have <strong class="text-blue">sang</strong> some of my favourites at a <strong class="text-blue">small concert as well!</strong>
-                </p>
-                <a href="./files/Resume_Rohit_Methwani(Product Designer).pdf" target="__tab" class="btn btn-primary">Resume</a>
-            </div>
-        </section>
-
-        <footer id="contact-section">
-            <div class="pre-footer content-container">
-                <div class="pre-footer-content">
-                    <h1 class="hero-heading">Contact</h1>
-                    <p class="body-text">Feel free to reach for work related queries or for fun random conversations!</p>
-                    <div class="social-links-container">
-                        <a href="https://www.behance.net/rohitmethwanidesign" target="_tab" class="social-link"><i class="fa-brands fa-behance text-white"></i></a>
-                        <a href="https://rohitmethwani.medium.com/" target="_tab" class="social-link"><i class="fa-brands fa-medium-m text-white"></i></a>
-                        <a href="https://dribbble.com/rohit_me" target="_tab" class="social-link"><i class="fa-brands fa-dribbble text-white"></i></a>
-                        <a href="https://twitter.com/RohitMethwanii" target="_tab" class="social-link"><i class="fa-brands fa-x-twitter text-white"></i></a>
-                        <a href="https://www.linkedin.com/in/rohit-methwani-72344215a/" target="_tab" class="social-link mr-4"><i class="fab fa-linkedin-in text-white"></i></a>
-                        <a href="mailto:rohit.methwani31@gmail.com" class="social-link"><i class="far fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="copyrights-footer">
-                <p>Designed &amp; developed with love</p>
-                <p>&copy;2026</p>
-            </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://kit.fontawesome.com/a916c910ad.js" crossorigin="anonymous"></script>
-        <script src="./js/script.js"></script>
-    </body>
+</body>
 </html>
