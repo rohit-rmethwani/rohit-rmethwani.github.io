@@ -54,7 +54,7 @@
   .back-link:hover { color: var(--blue); }
   .nav-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; text-decoration: none; }
 
-  header.hero { padding: 72px 0 40px; }
+  header.hero { padding: 72px 24px; }
   .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
   .tag {
     font-family: 'IBM Plex Mono', monospace;
@@ -228,6 +228,38 @@
   }
   .confidentiality-note a { color: var(--blue); text-decoration: underline; }
 
+  .disclaimer-block {
+    background: #fff;
+    border: 1.5px solid var(--red);
+    border-radius: 6px;
+    padding: 28px 30px;
+    margin: 0 0 8px;
+  }
+  .disclaimer-block .disclaimer-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  .disclaimer-block .disclaimer-title::before {
+    content: "";
+    width: 8px; height: 8px;
+    background: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .disclaimer-block p {
+    font-size: 15px;
+    color: var(--ink);
+    margin: 0;
+  }
+  .disclaimer-block a { color: var(--blue); text-decoration: underline; }
+
   footer.case-footer {
     background: var(--panel);
     color: var(--panel-tx);
@@ -305,6 +337,13 @@
     </div>
   </div>
 </header>
+
+<div class="rail" style="padding-top: 8px; padding-bottom: 40px;">
+  <div class="disclaimer-block reveal">
+    <p class="disclaimer-title">DISCLAIMER</p>
+    <p>Some specifics here — internal tooling, exact data models, and certain metrics — are shared at a high level per Prismforce's confidentiality guidelines. But there's more to this than fits on a page: the directions I tried and rejected, real edge cases, and how the actual filter builder behaves. Happy to walk through it live — <a href="mailto:rohit.methwani31@gmail.com">reach out →</a></p>
+  </div>
+</div>
 
 <section id="overview">
   <div class="rail">
@@ -442,9 +481,6 @@
     <div class="reveal">
       <p>The hardest part of this project wasn't the interface — it was resisting the urge to solve flexibility with more options. Every added filter or column type made the builder more powerful and slightly harder to learn. Layering dynamic filters on top of sensible defaults ended up being the right constraint: flexible enough for power users, structured enough that it didn't become its own support burden.</p>
       <p>It's also the project that made the case for a design system internally — not as a nice-to-have, but as the thing that would stop us rebuilding the same filter and table patterns every time a new report type came up.</p>
-      <div class="confidentiality-note">
-        Some specifics here — internal tooling, exact data models, and certain metrics — are shared at a high level per Prismforce's confidentiality guidelines. But there's more to this than fits on a page: the directions I tried and rejected, real edge cases, and how the actual filter builder behaves. Happy to walk through it live — <a href="mailto:rohit.methwani31@gmail.com">reach out →</a>
-      </div>
     </div>
   </div>
 </section>
